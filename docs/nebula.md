@@ -74,7 +74,7 @@ This document outlines the architecture for an application designed to create an
 
 ## Task Checklist
 
-- [] **Project Initialization**
+- [x] **Project Initialization**
 
   - [x] Set up a Next.js project with basic pages.
   - [x] Add basic project plan documentation
