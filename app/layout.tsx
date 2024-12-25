@@ -3,9 +3,9 @@ import "server-only";
 import {
   MAIN_METADATA as metadata,
   MAIN_VIEWPORT as viewport,
-} from "@/libs/constants/metadata/root-layout";
-import openSans from "@/libs/fonts/open-sans";
-import { LayoutProps } from "@/libs/types/app";
+} from "@constants/metadata/root-layout";
+import openSans from "@fonts/open-sans";
+import { LayoutProps } from "@typeslib/app";
 
 import "./globals.css";
 

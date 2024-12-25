@@ -1,14 +1,14 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import { ButtonHTMLAttributes } from "react";
 
-import { cn } from "../utils/ui/cn";
+import { cn } from "@utils/ui/cn";
 
 const buttonVariants = cva(
   "flex items-center justify-center w-full py-3 px-5 rounded-2xl font-open-sans font-normal text-base border border-border shadow-primary",
   {
     variants: {
       variant: {
-        default: "bg-secondary",
+        default: "bg-secondary text-primary",
         secondary: "bg-nebula-gradient text-secondary border-none",
       },
     },

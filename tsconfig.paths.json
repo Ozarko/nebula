@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@ui/*": ["./libs/ui/*"],
+      "@utils/*": ["./libs/utils/*"],
+      "@typeslib/*": ["./libs/types/*"],
+      "@fonts/*": ["./libs/fonts/*"],
+      "@constants/*": ["./libs/constants/*"],
+      "@/*": ["./*"]
+    }
+  }
+}
