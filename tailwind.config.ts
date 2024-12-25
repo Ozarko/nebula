@@ -8,9 +8,8 @@ export default {
   theme: {
     extend: {
       colors: {
+        primary: "var(--primary)",
         secondary: "var(--secondary)",
-        "text-primary": "var(--text-primary)",
-        "text-secondary": "var(--text-secondary)",
         border: "var(--border)",
       },
       backgroundImage: {

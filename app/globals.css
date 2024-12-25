@@ -4,12 +4,9 @@
 
 @layer base {
   :root {
-    --text-primary: #6a3aa2;
-    --text-secondary: #4a5568;
+    --primary: #6a3aa2;
     --secondary: #fbfbff;
     --border: #e6e6e6;
-    --box-shadow: 2px 2px 6px 0px #543c9740;
-    --font-open-sans: "Open Sans", sans-serif;
   }
 }
 
