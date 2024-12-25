@@ -19,12 +19,6 @@ export const MAIN_METADATA: Metadata = {
     { name: "AskNebula" },
     { name: "AskNebula Team", url: "https://asknebula.com" },
   ],
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-    userScalable: true,
-  },
   robots: {
     index: true,
     follow: true,
