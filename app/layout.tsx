@@ -14,7 +14,9 @@ export { metadata, viewport };
 export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body className={`${openSans.variable} antialiased`}>{children}</body>
+      <body className={`${openSans.variable} antialiased bg-nebula-gradient`}>
+        {children}
+      </body>
     </html>
   );
 }
