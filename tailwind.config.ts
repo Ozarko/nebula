@@ -23,7 +23,7 @@ export default {
         primary: "2px 2px 6px 0px #543c9740",
       },
       maxWidth: {
-        'sub-container': '330px',
+        "sub-container": "330px",
       },
       container: {
         center: true,
