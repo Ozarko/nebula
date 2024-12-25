@@ -82,7 +82,7 @@ This document outlines the architecture for an application designed to create an
   - [x] Adjust basic ts config configuration
   - [x] Add commitlint and documentation for commit messages
   - [x] Add Husky, add Lint-staged and commitlint for pre-commit checks
-  - [X] Configure Eslint + Prettier and add documentation
+  - [x] Configure Eslint + Prettier and add documentation
   - [] Add ts-reset library for type-safe object manipulation and basic types
   - [] Add server-only library
   - [] Configure basic metadata for the project
