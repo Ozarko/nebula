@@ -78,7 +78,7 @@ This document outlines the architecture for an application designed to create an
 
   - [X] Set up a Next.js project with basic pages.
   - [X] Add basic project plan documentation
-  - [] Pin node/npm versions
+  - [X] Pin node/npm versions
   - [] Adjust basic ts config configuration
   - [] Add commitlint and documentation for commit messages
   - [] Add Husky and Lint-staged for pre-commit checks
