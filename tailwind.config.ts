@@ -22,15 +22,16 @@ export default {
       boxShadow: {
         primary: "2px 2px 6px 0px #543c9740",
       },
+      maxWidth: {
+        'sub-container': '330px',
+      },
       container: {
         center: true,
         padding: "1rem",
         screens: {
           sm: "100%",
           md: "100%",
-          lg: "330px",
-          xl: "330px",
-          "2xl": "330px",
+          lg: "1232px",
         },
       },
     },
