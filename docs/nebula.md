@@ -87,9 +87,9 @@ This document outlines the architecture for an application designed to create an
   - [x] Add server-only library
   - [x] Configure basic metadata for the project
 
-- [ ] **Create Survey Configuration File**
+- [x] **Create Survey Configuration File**
 
-  - [] Prepare a JSON file containing questions, answers, and transition logic (basic).
+  - [x] Prepare a JSON file containing questions, answers, and transition logic (basic).
 
 - [ ] **UI Library Setup**
 
