@@ -5,8 +5,16 @@ export const MAIN_METADATA: Metadata = {
     default: "AskNebula | Best Psychics & Astrologers",
     template: "%s | AskNebula",
   },
-  description: "Gain clarity and find happiness with insights from professional psychics and astrologers. Your journey to a better future starts today.",
-  keywords: ["psychics", "astrologers", "professional readings", "find clarity", "happiness", "future insights"],
+  description:
+    "Gain clarity and find happiness with insights from professional psychics and astrologers. Your journey to a better future starts today.",
+  keywords: [
+    "psychics",
+    "astrologers",
+    "professional readings",
+    "find clarity",
+    "happiness",
+    "future insights",
+  ],
   authors: [
     { name: "AskNebula" },
     { name: "AskNebula Team", url: "https://asknebula.com" },
@@ -23,7 +31,8 @@ export const MAIN_METADATA: Metadata = {
   },
   openGraph: {
     title: "AskNebula | Best Psychics & Astrologers",
-    description: "Gain clarity and find happiness with insights from professional psychics and astrologers.",
+    description:
+      "Gain clarity and find happiness with insights from professional psychics and astrologers.",
     url: "https://asknebula.com",
     siteName: "AskNebula",
     images: [
@@ -40,7 +49,8 @@ export const MAIN_METADATA: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "AskNebula | Best Psychics & Astrologers",
-    description: "Your journey to a better future starts today with professional psychics and astrologers.",
+    description:
+      "Your journey to a better future starts today with professional psychics and astrologers.",
     site: "@AskNebula",
     creator: "@AskNebula",
     images: ["https://asknebula.com/app/logo.png"],
