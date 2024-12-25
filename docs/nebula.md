@@ -83,7 +83,7 @@ This document outlines the architecture for an application designed to create an
   - [x] Add commitlint and documentation for commit messages
   - [x] Add Husky, add Lint-staged and commitlint for pre-commit checks
   - [x] Configure Eslint + Prettier and add documentation
-  - [] Add ts-reset library for type-safe object manipulation and basic types
+  - [x] Add ts-reset library for type-safe object manipulation and basic types
   - [] Add server-only library
   - [] Configure basic metadata for the project
 
