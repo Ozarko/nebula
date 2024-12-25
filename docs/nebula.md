@@ -84,7 +84,7 @@ This document outlines the architecture for an application designed to create an
   - [x] Add Husky, add Lint-staged and commitlint for pre-commit checks
   - [x] Configure Eslint + Prettier and add documentation
   - [x] Add ts-reset library for type-safe object manipulation and basic types
-  - [] Add server-only library
+  - [x] Add server-only library
   - [] Configure basic metadata for the project
 
 - [ ] **Create Survey Configuration File**
