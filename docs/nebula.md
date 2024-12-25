@@ -85,7 +85,7 @@ This document outlines the architecture for an application designed to create an
   - [x] Configure Eslint + Prettier and add documentation
   - [x] Add ts-reset library for type-safe object manipulation and basic types
   - [x] Add server-only library
-  - [] Configure basic metadata for the project
+  - [x] Configure basic metadata for the project
 
 - [ ] **Create Survey Configuration File**
 
