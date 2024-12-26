@@ -7,6 +7,9 @@
       "@typeslib/*": ["./libs/types/*"],
       "@fonts/*": ["./libs/fonts/*"],
       "@constants/*": ["./libs/constants/*"],
+      "@components/*": ["./libs/components/*"],
+      "@enums/*": ["./libs/enums/*"],
+      "@mock/*": ["./libs/mock/*"],
       "@/*": ["./*"]
     }
   }
