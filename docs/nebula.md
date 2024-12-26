@@ -93,15 +93,15 @@ This document outlines the architecture for an application designed to create an
 
 - [x] **UI Library Setup**
 
-  - Configure fonts, color palette, and basic components (e.g., buttons, typography).
+  - [x] Configure fonts, color palette, and basic components (e.g., buttons, typography).
 
-- [ ] **Pages/Blocks Structure**
+- [x] **Dynamic Page Generation Layout**
+
+  - [x]Use Next.js to generate question pages from the configuration file.
+
+- [] **Pages/Blocks Structure**
 
   - Create a basic structure for survey pages and blocks including "how does it works" page.
-
-- [ ] **Dynamic Page Generation Layout**
-
-  - Use Next.js to generate question pages from the configuration file.
 
 - [ ] **State Manager Implementation**
 
