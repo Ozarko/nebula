@@ -2,7 +2,7 @@ import { SimpleLiteralRegex, ConditionalLiteralRegex } from "@regex/literals";
 
 export const replaceLiterals = (
   input: string,
-  replacements: Record<string, string>
+  replacements: Record<string, string>,
 ): string => {
   let result = input.replace(
     ConditionalLiteralRegex,
@@ -15,7 +15,7 @@ export const replaceLiterals = (
       } else {
         return falsePart;
       }
-    }
+    },
   );
 
   result = result.replace(SimpleLiteralRegex, (_match, literalKey) => {

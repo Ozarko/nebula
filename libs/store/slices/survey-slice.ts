@@ -24,7 +24,7 @@ export const surveySlice = createAppSlice({
       (state, action: PayloadAction<{ value: string }>) => {
         state.selectedSurvey = action.payload.value;
         state.surveyAnswers = [];
-      }
+      },
     ),
     setSurveyAnswer: create.reducer(
       (
@@ -33,14 +33,14 @@ export const surveySlice = createAppSlice({
           id: string;
           value: string;
           literalKey: string;
-        }>
+        }>,
       ) => {
         state.surveyAnswers.push({
           id: action.payload.id,
           value: action.payload.value,
           literalKey: action.payload.literalKey,
         });
-      }
+      },
     ),
   }),
   selectors: {
