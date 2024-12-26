@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import { redirect } from "next/navigation";
 
 import { StaticPagePath } from "@enums/static-page-path";
-import { Question } from "@typeslib/questionary";
+import { Question } from "@typeslib/survey/general";
 import { isBlockBuilderQuestion } from "@utils/types-guard/page-builder/is-block-builder-question";
 import { isOneMorePage } from "@utils/types-guard/page-builder/is-one-more-page";
 import { isSomeOtherPage } from "@utils/types-guard/page-builder/is-some-other-page";
@@ -35,7 +35,6 @@ type PageBuilderProps = {
 };
 
 export const PageBuilder = ({ question }: PageBuilderProps) => {
-  console.log(isBlockBuilderQuestion(question));
   switch (true) {
     case isBlockBuilderQuestion(question):
       return <BlockBuilderPage {...question} />;

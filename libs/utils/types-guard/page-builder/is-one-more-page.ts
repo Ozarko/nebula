@@ -1,8 +1,9 @@
-import { QuestionaryPageType } from "@enums/questionary";
-import { OneMorePageType, Question } from "@typeslib/questionary";
+import { SurveyPageEnum } from "@enums/survey";
+import { Question } from "@typeslib/survey/general";
+import { OneMorePageType } from "@typeslib/survey/page-types";
 
 export const isOneMorePage = (
-  question: Question,
+  question: Question
 ): question is OneMorePageType => {
-  return question.pageType === QuestionaryPageType.OneMorePage;
+  return question.pageType === SurveyPageEnum.OneMorePage;
 };

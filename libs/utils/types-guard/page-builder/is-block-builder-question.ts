@@ -1,8 +1,9 @@
-import { QuestionaryPageType } from "@enums/questionary";
-import { BlockBuilderQuestion, Question } from "@typeslib/questionary";
+import { SurveyPageEnum } from "@enums/survey";
+import { Question } from "@typeslib/survey/general";
+import { BlockBuilderQuestion } from "@typeslib/survey/page-types";
 
 export const isBlockBuilderQuestion = (
-  question: Question,
+  question: Question
 ): question is BlockBuilderQuestion => {
-  return question.pageType === QuestionaryPageType.BlockBuilder;
+  return question.pageType === SurveyPageEnum.BlockBuilder;
 };

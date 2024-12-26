@@ -2,6 +2,7 @@
 
 import { NavigateOptions } from "next/dist/shared/lib/app-router-context.shared-runtime";
 import { useRouter } from "next/navigation";
+import { MouseEvent } from "react";
 
 import { Button, ButtonProps } from "@ui/button";
 
@@ -13,11 +14,15 @@ type RouterButtonProps = ButtonProps & {
 export const RouterButton = ({
   href,
   navigationOptions,
+  onClick,
   ...props
 }: RouterButtonProps) => {
   const router = useRouter();
 
-  const handleNavigation = () => {
+  const handleNavigation = (e: MouseEvent<HTMLButtonElement>) => {
+    if (onClick) {
+      onClick(e);
+    }
     router.push(href, navigationOptions);
   };
 

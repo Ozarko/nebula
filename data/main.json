@@ -191,7 +191,7 @@
       {
         "type": "header",
         "config": {
-          "title": "So how does it work?s"
+          "title": "So how does it work?"
         },
         "id": "537a-4f38-4736-aef2-1053-140d-3303-1ad0"
       },
@@ -203,7 +203,7 @@
         "id": "31cb-b27c-4d10-aa73-5ae3-e69f-3019-980c"
       },
       {
-        "type": "query-url",
+        "type": "query-url-button",
         "config": {
           "title": "Next",
           "queryKey": "next"

@@ -4,7 +4,7 @@ import { ButtonHTMLAttributes } from "react";
 import { cn } from "@utils/ui/cn";
 
 const mainButtonStyles =
-  "w-full py-3 px-5 rounded-2xl font-open-sans font-normal text-base border border-border shadow-primary";
+  "w-full py-3 px-5 rounded-2xl font-open-sans font-normal text-sm border border-border shadow-primary";
 
 const buttonVariants = cva("flex items-center justify-center", {
   variants: {
