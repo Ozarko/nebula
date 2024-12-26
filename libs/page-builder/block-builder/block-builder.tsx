@@ -8,18 +8,22 @@ import { isSurveyDescriptionComponent } from "@utils/types-guard/block-builder/i
 import { isSurveyHeaderComponent } from "@utils/types-guard/block-builder/is-survey-header";
 
 const SurveyButton = dynamic(async () => {
-  const { SurveyButton } = await import("@components/survey/survey-button");
+  const { SurveyButton } = await import(
+    "@components/survey/buttons/survey-button"
+  );
   return SurveyButton;
 });
 
 const SurveyHeader = dynamic(async () => {
-  const { SurveyHeader } = await import("@components/typography/survey-header");
+  const { SurveyHeader } = await import(
+    "@components/survey/typography/survey-header"
+  );
   return SurveyHeader;
 });
 
 const SurveyDescription = dynamic(async () => {
   const { SurveyDescription } = await import(
-    "@components/typography/survey-description"
+    "@components/survey/typography/survey-description"
   );
   return SurveyDescription;
 });

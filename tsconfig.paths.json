@@ -15,6 +15,7 @@
       "@hooks/*": ["./libs/hooks/*"],
       "@providers/*": ["./libs/providers/*"],
       "@services/*": ["./libs/services/*"],
+      "@regex/*": ["./libs/regex/*"],
       "@/*": ["./*"]
     }
   }

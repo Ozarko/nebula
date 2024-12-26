@@ -1,8 +1,8 @@
 "use client";
 
 import { RouterButton } from "@components/buttons/router-button";
+import { setSurveyAnswer } from "@store/actions/survey-actions";
 import { useAppDispatch } from "@store/hooks";
-import { setSurveyAnswer } from "@store/slices/survey-slice";
 import { SurveyButtonType } from "@typeslib/survey/components";
 import { WithQuestionId } from "@typeslib/survey/general";
 import { withSurveyPathUrl } from "@utils/survey/withSurveyPathUrl";

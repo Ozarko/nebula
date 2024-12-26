@@ -109,7 +109,7 @@
         {
           "type": "header",
           "config": {
-            "title": "Single {{gender}} ((if{children='Yes'}?who have children:'')) need a slightly different approach to find their perfect partner. But first, how did you feel in your last relationship?"
+            "title": "Single {{gender}} ((if{{children}}='Yes'?who have children:'')) need a slightly different approach to find their perfect partner. But first, how did you feel in your last relationship?"
           },
           "id": "37c9-b080-4020-ac77-8974-fef2-18bc-b651"
         },

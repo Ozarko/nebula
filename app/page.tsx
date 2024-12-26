@@ -1,7 +1,7 @@
 import "server-only";
 
 import { Navigation } from "@components/layout/navigation";
-import { SurveyStartButton } from "@components/survey/survey-start-button";
+import { SurveyStartButton } from "@components/survey/buttons/survey-start-button";
 import { getSurveysConfig } from "@services/get-surveys-config";
 import { TypographyH2 } from "@ui/typography/typographyH2";
 import { TypographyP } from "@ui/typography/typographyP";
