@@ -99,9 +99,9 @@ This document outlines the architecture for an application designed to create an
 
   - [x]Use Next.js to generate question pages from the configuration file.
 
-- [] **Pages/Blocks Structure**
+- [x] **Pages/Blocks Structure**
 
-  - Create a basic structure for survey pages and blocks including "how does it works" page.
+  - [x] Create a basic structure for survey pages and blocks including "how does it works" page.
 
 - [ ] **State Manager Implementation**
 
