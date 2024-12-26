@@ -91,7 +91,7 @@ This document outlines the architecture for an application designed to create an
 
   - [x] Prepare a JSON file containing questions, answers, and transition logic (basic).
 
-- [ ] **UI Library Setup**
+- [x] **UI Library Setup**
 
   - Configure fonts, color palette, and basic components (e.g., buttons, typography).
 
