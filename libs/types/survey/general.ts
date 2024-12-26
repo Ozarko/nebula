@@ -20,3 +20,7 @@ export type SurveyType = {
   initialQuestionId: string;
   questions: Record<string, Question>;
 };
+
+export type WithQuestionId<T> = {
+  questionId: string;
+} & T;

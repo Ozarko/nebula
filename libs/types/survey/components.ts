@@ -9,7 +9,7 @@ export type QuestionComponentType<TQType, TQConfig> = {
 export type SurveyButtonConfigType = {
   title: string;
   value: string;
-  storageKey: string;
+  literalKey: string;
   nextUrl: string;
 };
 

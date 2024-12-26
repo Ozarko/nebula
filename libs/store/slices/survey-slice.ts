@@ -5,13 +5,15 @@ import { StorageSlicesEnum } from "@enums/storage/storage";
 export type SurveyState = {
   selectedSurvey: string;
   surveyAnswers: {
-    [key: string]: string;
-  };
+    id: string;
+    value: string;
+    literalKey: string;
+  }[];
 };
 
 const initialState: SurveyState = {
   selectedSurvey: "",
-  surveyAnswers: {},
+  surveyAnswers: [],
 };
 
 export const surveySlice = createAppSlice({
@@ -21,18 +23,27 @@ export const surveySlice = createAppSlice({
     changeSurveyType: create.reducer(
       (state, action: PayloadAction<{ value: string }>) => {
         state.selectedSurvey = action.payload.value;
-        state.surveyAnswers = {};
-      },
+        state.surveyAnswers = [];
+      }
     ),
     setSurveyAnswer: create.reducer(
-      (state, action: PayloadAction<{ key: string; value: string }>) => {
-        state.surveyAnswers[action.payload.key] = action.payload.value;
-      },
+      (
+        state,
+        action: PayloadAction<{ id: string; value: string; literalKey: string }>
+      ) => {
+        state.surveyAnswers.push({
+          id: action.payload.id,
+          value: action.payload.value,
+          literalKey: action.payload.literalKey,
+        });
+      }
     ),
   }),
   selectors: {
     selectSurveyType: (state) => state.selectedSurvey,
-    selectSurveyAnswer: (state, key: string) => state.surveyAnswers[key],
+    selectSurveyAnswer: (state, id: string) => {
+      return state.surveyAnswers.find((answer) => answer.id === id);
+    },
     selectAllSurveyAnswers: (state) => state.surveyAnswers,
   },
 });

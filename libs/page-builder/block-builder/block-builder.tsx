@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 
 import { QuestionComponentsType } from "@typeslib/survey/components";
+import { WithQuestionId } from "@typeslib/survey/general";
 import { isSurveyQueryUrlButtonComponent } from "@utils/types-guard/block-builder/is-query-url-button";
 import { isSurveyButtonComponent } from "@utils/types-guard/block-builder/is-survey-button";
 import { isSurveyDescriptionComponent } from "@utils/types-guard/block-builder/is-survey-description";
@@ -30,10 +31,13 @@ const SurveyQueryUrlButton = dynamic(async () => {
   return QueryUrlButton;
 });
 
-export const BlockBuilder = (props: QuestionComponentsType) => {
+export const BlockBuilder = ({
+  questionId,
+  ...props
+}: WithQuestionId<QuestionComponentsType>) => {
   switch (true) {
     case isSurveyButtonComponent(props):
-      return <SurveyButton {...props} />;
+      return <SurveyButton {...props} questionId={questionId} />;
     case isSurveyHeaderComponent(props):
       return <SurveyHeader {...props} />;
     case isSurveyDescriptionComponent(props):

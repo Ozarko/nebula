@@ -19,7 +19,7 @@
           "config": {
             "title": "Female",
             "value": "Female",
-            "storageKey": "gender",
+            "literalKey": "gender",
             "nextUrl": "/main/flow-choice"
           },
           "id": "646d-2117-4271-9ddb-7930-5517-7a52-3a69"
@@ -29,7 +29,7 @@
           "config": {
             "title": "Male",
             "value": "Male",
-            "storageKey": "gender",
+            "literalKey": "gender",
             "nextUrl": "/main/flow-choice"
           },
           "id": "5eb6-f96b-4133-9b9a-cc93-77fc-ac38-a442"
@@ -52,7 +52,7 @@
           "config": {
             "title": "Single",
             "value": "Single",
-            "storageKey": "relationshipStatus",
+            "literalKey": "relationshipStatus",
             "nextUrl": "/main/single-parent"
           },
           "id": "771c-a7b6-4645-9c8c-0027-b24f-2bae-84b0"
@@ -62,7 +62,7 @@
           "config": {
             "title": "In a relationship",
             "value": "In a relationship",
-            "storageKey": "relationshipStatus",
+            "literalKey": "relationshipStatus",
             "nextUrl": "/main/parent"
           },
           "id": "c288-c7bd-4854-85da-75da-390f-72c5-93d6"
@@ -85,7 +85,7 @@
           "config": {
             "title": "Yes",
             "value": "Yes",
-            "storageKey": "children",
+            "literalKey": "children",
             "nextUrl": "/main/single-problem"
           },
           "id": "3516-7df1-430f-b320-8c4a-2f29-23e8-fc55"
@@ -95,7 +95,7 @@
           "config": {
             "title": "No",
             "value": "No",
-            "storageKey": "children",
+            "literalKey": "children",
             "nextUrl": "/main/single-problem"
           },
           "id": "06b2-fdb2-4ada-91df-5f35-6494-1d5f-609f"
@@ -119,7 +119,7 @@
             "title": "I was unhappy with low things were going in my relationship",
             "value": "I was unhappy with low things were going in my relationship",
             "nextUrl": "/main/traits-tend-to-overthink",
-            "storageKey": "problem"
+            "literalKey": "problem"
           },
           "id": "5530-dbb8-4dc3-8ace-657a-500d-c607-b727"
         },
@@ -129,7 +129,7 @@
             "title": "I was unhappy with parts of my relationship, but some thing were working",
             "value": "I was unhappy with parts of my relationship, but some thing were working",
             "nextUrl": "/main/traits-tend-to-overthink",
-            "storageKey": "problem"
+            "literalKey": "problem"
           },
           "id": "205b-c7f0-4f19-b902-a0d4-8fa9-b937-f558"
         },
@@ -139,7 +139,7 @@
             "title": "I was generally happy with my relationship",
             "value": "I was generally happy with my relationship",
             "nextUrl": "/main/traits-tend-to-overthink",
-            "storageKey": "problem"
+            "literalKey": "problem"
           },
           "id": "3ff0-8455-4254-bb6f-5e11-54fa-d2c4-9de4"
         },
@@ -149,7 +149,7 @@
             "title": "I’ve never been in a relationship",
             "value": "I’ve never been in a relationship",
             "nextUrl": "/main/traits-tend-to-overthink",
-            "storageKey": "problem"
+            "literalKey": "problem"
           },
           "id": "ab97-bf32-4aa2-b257-b89e-b3d0-1363-99d2"
         }
@@ -172,7 +172,7 @@
             "title": "Yes",
             "value": "Yes",
             "nextUrl": "/main/how-it-works?next=traits-most-important",
-            "storageKey": "overthink"
+            "literalKey": "overthink"
           },
           "id": "88f3-21d3-4642-b6b7-67f5-eefb-8624-4729"
         },
@@ -181,7 +181,7 @@
           "config": {
             "title": "No",
             "value": "No",
-            "storageKey": "overthink",
+            "literalKey": "overthink",
             "nextUrl": "/main/how-it-works?next=traits-emotional-control"
           },
           "id": "c8e5-6d0a-46fc-bb56-471d-7c46-8a8e-6f21"
@@ -233,7 +233,7 @@
             "title": "Success",
             "value": "Success",
             "nextUrl": "/main/relationship-about-us",
-            "storageKey": "mostImportant"
+            "literalKey": "mostImportant"
           },
           "id": "b6c1-8d70-4a1b-9598-6367-3110-1db9-6bfe"
         },
@@ -243,7 +243,7 @@
             "title": "Romance",
             "value": "Romance",
             "nextUrl": "/main/relationship-about-us",
-            "storageKey": "mostImportant"
+            "literalKey": "mostImportant"
           },
           "id": "a44b-055a-48d8-b641-a796-626e-cc0d-fcbe"
         },
@@ -253,7 +253,7 @@
             "title": "Stability",
             "value": "Stability",
             "nextUrl": "/main/relationship-about-us",
-            "storageKey": "mostImportant"
+            "literalKey": "mostImportant"
           },
           "id": "8c9c-be20-4b5e-b2c6-b880-4fe3-b4bd-46d6"
         },
@@ -263,7 +263,7 @@
             "title": "Freedom",
             "value": "Freedom",
             "nextUrl": "/main/relationship-about-us",
-            "storageKey": "mostImportant"
+            "literalKey": "mostImportant"
           },
           "id": "ea3a-fbf4-4a1e-80f0-acb1-c91b-dada-98e8"
         }
@@ -286,7 +286,7 @@
             "title": "Yes",
             "value": "Yes",
             "nextUrl": "/main/relationship-about-us",
-            "storageKey": "emotional-control"
+            "literalKey": "emotional-control"
           },
           "id": "757c-dec8-4585-9bc3-7185-e74d-fe13-da6c"
         },
@@ -296,7 +296,7 @@
             "title": "Sometimes",
             "value": "Sometimes",
             "nextUrl": "/main/relationship-about-us",
-            "storageKey": "emotional-control"
+            "literalKey": "emotional-control"
           },
           "id": "498b-2ce2-4420-a960-2f92-67cb-019a-92ce"
         },
@@ -306,7 +306,7 @@
             "title": "Rarely",
             "value": "Rarely",
             "nextUrl": "/main/relationship-about-us",
-            "storageKey": "emotional-control"
+            "literalKey": "emotional-control"
           },
           "id": "f644-9c22-488e-b6eb-7995-b4ce-253d-c34f"
         },
@@ -316,7 +316,7 @@
             "title": "Not at all",
             "value": "Not at all",
             "nextUrl": "/main/relationship-about-us",
-            "storageKey": "emotional-control"
+            "literalKey": "emotional-control"
           },
           "id": "07f0-37c9-4a84-988f-068e-edf8-0900-1ae2"
         }
@@ -337,10 +337,10 @@
           "config": {
             "title": "Yes",
             "value": "Yes",
-            "storageKey": "children",
+            "literalKey": "children",
             "nextUrl": "/main/in-a-relationship-problem"
           },
-          "id": "563c-480d-4aab-af4f-81b3-0f71-f525-0f4e"
+          "id": "563c-480d-4aab-af4f-81b3-0f71-f525-000"
         },
         {
           "type": "survey-button",
@@ -348,10 +348,10 @@
           "config": {
             "title": "No",
             "value": "No",
-            "storageKey": "children",
+            "literalKey": "children",
             "nextUrl": "/main/in-a-relationship-problem"
           },
-          "id": "afd4-db0e-4004-a321-54d0-63f3-5326-71b7"
+          "id": "afd4-db0e-4004-a321-54d0-63f3-5326-0001"
         }
       ]
     },
@@ -372,7 +372,7 @@
             "title": "I’m very unhappy with how things are going in my relationship",
             "value": "I’m very unhappy with how things are going in my relationship",
             "nextUrl": "/main/partner-introvert-or-extrovert",
-            "storageKey": "relationHappiness"
+            "literalKey": "relationHappiness"
           },
           "id": "b468-472a-4f9c-ade5-c655-956d-56e4-a4c8"
         },
@@ -382,7 +382,7 @@
             "title": "I’m unhappy with parts of my relationship, but some things are working well",
             "value": "I’m unhappy with parts of my relationship, but some things are working well",
             "nextUrl": "/main/partner-introvert-or-extrovert",
-            "storageKey": "relationHappiness"
+            "literalKey": "relationHappiness"
           },
           "id": "bd37-5305-4700-8cfe-5070-0c80-2291-46bc"
         },
@@ -392,7 +392,7 @@
             "title": "We had different communication styles",
             "value": "We had different communication styles",
             "nextUrl": "/main/partner-introvert-or-extrovert",
-            "storageKey": "relationHappiness"
+            "literalKey": "relationHappiness"
           },
           "id": "aa64-3ce0-4d52-8f54-76b1-c791-af59-96dd"
         },
@@ -402,7 +402,7 @@
             "title": "I’m generally happy in my relationship",
             "value": "I’m generally happy in my relationship",
             "nextUrl": "/main/partner-introvert-or-extrovert",
-            "storageKey": "relationHappiness"
+            "literalKey": "relationHappiness"
           },
           "id": "f9a0-7a6c-410d-aba8-5f9c-3500-46b9-c547"
         }
@@ -425,7 +425,7 @@
             "title": "Introvert",
             "value": "Introvert",
             "nextUrl": "/main/partner-gender",
-            "storageKey": "partnerIntrovertOrExtrovert"
+            "literalKey": "partnerIntrovertOrExtrovert"
           },
           "id": "cd57-7410-4be1-b8de-96b4-ce3f-fb5e-0df3"
         },
@@ -435,7 +435,7 @@
             "title": "Extrovert",
             "value": "Extrovert",
             "nextUrl": "/main/partner-gender",
-            "storageKey": "partnerIntrovertOrExtrovert"
+            "literalKey": "partnerIntrovertOrExtrovert"
           },
           "id": "e3ff-19ad-4adc-9646-8e11-80c5-6791-a4b8"
         },
@@ -445,7 +445,7 @@
             "title": "A bit of both",
             "value": "A bit of both",
             "nextUrl": "/main/partner-gender",
-            "storageKey": "partnerIntrovertOrExtrovert"
+            "literalKey": "partnerIntrovertOrExtrovert"
           },
           "id": "d7aa-518e-4bd0-98d1-1612-c1c5-ef08-6642"
         }
@@ -468,7 +468,7 @@
             "title": "Male",
             "value": "Male",
             "nextUrl": "/main/partner-priority",
-            "storageKey": "partnerGender"
+            "literalKey": "partnerGender"
           },
           "id": "5a42-d353-4164-aa0a-f38d-0faa-0104-d622"
         },
@@ -478,7 +478,7 @@
             "title": "Female",
             "value": "Female",
             "nextUrl": "/main/partner-priority",
-            "storageKey": "partnerGender"
+            "literalKey": "partnerGender"
           },
           "id": "4dfd-c139-49a9-8d15-83e2-461c-0b12-5e89"
         }
@@ -508,7 +508,7 @@
             "title": "Strongly agree",
             "value": "Strongly agree",
             "nextUrl": "/main/think-about-relationship-goals",
-            "storageKey": "partnerPriority"
+            "literalKey": "partnerPriority"
           },
           "id": "e825-a04a-4426-8d96-a761-de18-13b0-4a57"
         },
@@ -518,7 +518,7 @@
             "title": "Agree",
             "value": "Agree",
             "nextUrl": "/main/think-about-relationship-goals",
-            "storageKey": "partnerPriority"
+            "literalKey": "partnerPriority"
           },
           "id": "4507-8601-4e22-aac1-efda-83ec-862e-1417"
         },
@@ -528,7 +528,7 @@
             "title": "Neutral",
             "value": "Neutral",
             "nextUrl": "/main/think-about-relationship-goals",
-            "storageKey": "partnerPriority"
+            "literalKey": "partnerPriority"
           },
           "id": "cd06-5461-463d-a068-fa65-a080-3a7c-ac96"
         },
@@ -538,7 +538,7 @@
             "title": "Disagree",
             "value": "Disagree",
             "nextUrl": "/main/think-about-relationship-goals",
-            "storageKey": "partnerPriority"
+            "literalKey": "partnerPriority"
           },
           "id": "4fdd-a800-46bb-b855-e546-a055-0b22-7243"
         },
@@ -548,7 +548,7 @@
             "title": "Strongly disagree",
             "value": "Strongly disagree",
             "nextUrl": "/main/think-about-relationship-goals",
-            "storageKey": "partnerPriority"
+            "literalKey": "partnerPriority"
           },
           "id": "9c1c-fc6c-4b86-9f0e-e86f-cf05-6e4f-6103"
         }
@@ -571,7 +571,7 @@
             "title": "Optimistic! They are totally doable, with some guidance.",
             "value": "Optimistic! They are totally doable, with some guidance.",
             "nextUrl": "/main/relationship-about-us",
-            "storageKey": "relationshipGoals"
+            "literalKey": "relationshipGoals"
           },
           "id": "67ce-8c5c-4cf2-a0ee-8e21-ebb5-0fb8-68ab"
         },
@@ -581,7 +581,7 @@
             "title": "Cautious. I’ve struggled before, but I’m hopeful.",
             "value": "Cautious. I’ve struggled before, but I’m hopeful.",
             "nextUrl": "/main/relationship-about-us",
-            "storageKey": "relationshipGoals"
+            "literalKey": "relationshipGoals"
           },
           "id": "d746-3e8e-43ed-ada7-548f-7a05-ef8f-55a1"
         },
@@ -591,7 +591,7 @@
             "title": "I’m feeling a little anxious, honestly.",
             "value": "I’m feeling a little anxious, honestly.",
             "nextUrl": "/main/relationship-about-us",
-            "storageKey": "relationshipGoals"
+            "literalKey": "relationshipGoals"
           },
           "id": "7505-dab4-4f9c-8177-f70d-0479-0c7b-a5d7"
         }
@@ -614,7 +614,7 @@
             "title": "Poster or Billboard",
             "value": "Poster or Billboard",
             "nextUrl": "/main/results",
-            "storageKey": "aboutNebula"
+            "literalKey": "aboutNebula"
           },
           "id": "0eda-d64e-4fab-a228-09ce-67a4-e356-2f5a"
         },
@@ -624,7 +624,7 @@
             "title": "Friend or Family",
             "value": "Friend or Family",
             "nextUrl": "/main/results",
-            "storageKey": "aboutNebula"
+            "literalKey": "aboutNebula"
           },
           "id": "3a64-7e08-4eab-9967-0b91-32e2-e339-e4b8"
         },
@@ -634,7 +634,7 @@
             "title": "Instagram",
             "value": "Instagram",
             "nextUrl": "/main/results",
-            "storageKey": "aboutNebula"
+            "literalKey": "aboutNebula"
           },
           "id": "d650-da52-4cc5-9342-b7a1-9639-9ab9-5d0d"
         },
@@ -644,7 +644,7 @@
             "title": "Direct Mail or Package Insert",
             "value": "Direct Mail or Package Insert",
             "nextUrl": "/main/results",
-            "storageKey": "aboutNebula"
+            "literalKey": "aboutNebula"
           },
           "id": "39fa-b603-49d0-88af-67a9-24f3-b86e-675d"
         },
@@ -654,7 +654,7 @@
             "title": "Online TV or Streaming TV",
             "value": "Online TV or Streaming TV",
             "nextUrl": "/main/results",
-            "storageKey": "aboutNebula"
+            "literalKey": "aboutNebula"
           },
           "id": "2f96-bdad-4157-9120-0512-7b81-d597-8102"
         },
@@ -664,7 +664,7 @@
             "title": "TV",
             "value": "TV",
             "nextUrl": "/main/results",
-            "storageKey": "aboutNebula"
+            "literalKey": "aboutNebula"
           },
           "id": "6f63-138d-483e-a2fb-af81-cdc9-b643-0dea"
         },
@@ -674,7 +674,7 @@
             "title": "Radio",
             "value": "Radio",
             "nextUrl": "/main/results",
-            "storageKey": "aboutNebula"
+            "literalKey": "aboutNebula"
           },
           "id": "95f9-8907-435e-ab4a-905b-4414-6f95-dec8"
         },
@@ -684,7 +684,7 @@
             "title": "Search Engine (Google, Bing, etc.)",
             "value": "Search Engine (Google, Bing, etc.)",
             "nextUrl": "/main/results",
-            "storageKey": "aboutNebula"
+            "literalKey": "aboutNebula"
           },
           "id": "6163-3846-40b7-8842-d3cd-a161-481a-62a7"
         },
@@ -694,7 +694,7 @@
             "title": "Newspaper or Magazine",
             "value": "Newspaper or Magazine",
             "nextUrl": "/main/results",
-            "storageKey": "aboutNebula"
+            "literalKey": "aboutNebula"
           },
           "id": "5b55-cb7e-4b48-b6fa-ffc9-8494-14ef-8513"
         },
@@ -704,7 +704,7 @@
             "title": "Facebook",
             "value": "Facebook",
             "nextUrl": "/main/results",
-            "storageKey": "aboutNebula"
+            "literalKey": "aboutNebula"
           },
           "id": "ef38-adce-4935-aa6d-594d-fcd2-2d11-c9c0"
         },
@@ -714,7 +714,7 @@
             "title": "Blog Post or Website Review",
             "value": "Blog Post or Website Review",
             "nextUrl": "/main/results",
-            "storageKey": "aboutNebula"
+            "literalKey": "aboutNebula"
           },
           "id": "1ea9-6ded-421b-aeeb-b641-b10d-a09a-2a86"
         },
@@ -724,7 +724,7 @@
             "title": "Podcast",
             "value": "Podcast",
             "nextUrl": "/main/results",
-            "storageKey": "aboutNebula"
+            "literalKey": "aboutNebula"
           },
           "id": "ccaf-7343-40bb-a969-3c96-29f4-6d9f-30e3"
         },
@@ -734,7 +734,7 @@
             "title": "Influencer",
             "value": "Influencer",
             "nextUrl": "/main/results",
-            "storageKey": "aboutNebula"
+            "literalKey": "aboutNebula"
           },
           "id": "a45d-a7fb-4238-a7d3-bb8c-9edc-24f7-e4f4"
         },
@@ -744,7 +744,7 @@
             "title": "Youtube",
             "value": "Youtube",
             "nextUrl": "/main/results",
-            "storageKey": "aboutNebula"
+            "literalKey": "aboutNebula"
           },
           "id": "4384-b65c-4e1f-9e81-6c27-6dd6-0813-d380"
         },
@@ -754,7 +754,7 @@
             "title": "Pinterest",
             "value": "Pinterest",
             "nextUrl": "/main/results",
-            "storageKey": "aboutNebula"
+            "literalKey": "aboutNebula"
           },
           "id": "5bf2-c383-4b81-a3f8-7475-1dcd-9b50-67fd"
         },
@@ -764,7 +764,7 @@
             "title": "Other",
             "value": "Other",
             "nextUrl": "/main/results",
-            "storageKey": "aboutNebula"
+            "literalKey": "aboutNebula"
           },
           "id": "c3e0-86b9-40aa-b4ef-6c33-ff5a-4473-ac7c"
         }

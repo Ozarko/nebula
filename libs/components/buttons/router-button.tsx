@@ -4,7 +4,6 @@ import { NavigateOptions } from "next/dist/shared/lib/app-router-context.shared-
 import { useRouter } from "next/navigation";
 import { MouseEvent } from "react";
 
-import { StaticPagePath } from "@enums/general/static-page-path";
 import { Button, ButtonProps } from "@ui/button";
 
 type RouterButtonProps = ButtonProps & {
@@ -24,7 +23,7 @@ export const RouterButton = ({
     if (onClick) {
       onClick(e);
     }
-    router.push(`${StaticPagePath.Survey}${href}`, navigationOptions);
+    router.push(href, navigationOptions);
   };
 
   return <Button onClick={handleNavigation} {...props} />;
