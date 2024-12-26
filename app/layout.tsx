@@ -1,15 +1,12 @@
 import "server-only";
 
-import {
-  MAIN_METADATA as metadata,
-  MAIN_VIEWPORT as viewport,
-} from "@constants/metadata/root-layout";
+import { MAIN_METADATA as metadata } from "@constants/metadata/root-layout";
 import openSans from "@fonts/open-sans";
 import { LayoutProps } from "@typeslib/app";
 
 import "./globals.css";
 
-export { metadata, viewport };
+export { metadata };
 
 export default function RootLayout({ children }: LayoutProps) {
   return (

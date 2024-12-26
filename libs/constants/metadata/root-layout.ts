@@ -1,12 +1,5 @@
 import { Metadata, Viewport } from "next";
 
-export const MAIN_VIEWPORT: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
-};
-
 export const MAIN_METADATA: Metadata = {
   title: {
     default: "AskNebula | Best Psychics & Astrologers",

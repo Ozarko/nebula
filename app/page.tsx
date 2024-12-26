@@ -1,20 +1,28 @@
 import "server-only";
 
-import { Button } from "@ui/atomic/button";
+import { RouterButton } from "@components/buttons/router-button";
+import { Navigation } from "@components/layout/navigation";
 import { TypographyH2 } from "@ui/typography/typographyH2";
 import { TypographyP } from "@ui/typography/typographyP";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center pt-20 w-screen min-h-screen">
-      <div className="flex flex-col space-y-4 container">
-        <TypographyH2>
-          Hello, world! This is a button component styled with Tailwind CSS.
-        </TypographyH2>
-        <TypographyP>This is a paragraph styled with Tailwind CSS.</TypographyP>
-        <Button>Click me</Button>
-        <Button variant="secondary">Click me</Button>
-      </div>
-    </main>
+    <>
+      <Navigation />
+      <main className="flex flex-col items-center pt-[76px] container min-h-screen ">
+        <div className="flex flex-col space-y-4 max-w-sub-container">
+          <TypographyH2>
+            Welcome to Nebula - Your Path to Clarity and Happiness
+          </TypographyH2>
+          <TypographyP>
+            Discover the best psychics and astrologers to guide you on your
+            journey to happiness. Gain insights, find clarity, and achieve your
+            goals with personalized readings and professional guidance from
+            Nebula.
+          </TypographyP>
+          <RouterButton href="/main/prelanding">Start Questionary</RouterButton>
+        </div>
+      </main>
+    </>
   );
 }
