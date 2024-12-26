@@ -5,6 +5,7 @@ import { redirect } from "next/navigation";
 import { getSurveyByConfig } from "@/libs/services/getSurveyByConfig";
 import { getSurveysIds } from "@/libs/services/getSurveysIds";
 import { StaticPagePath } from "@enums/static-page-path";
+import { PageBuilder } from "@page-builder/page-builder";
 import { PageProps } from "@typeslib/app";
 
 export async function generateStaticParams() {
@@ -21,5 +22,5 @@ export default async function SurveyItemPage({ params }: SurveyItemPageProps) {
     redirect(StaticPagePath.NotFound);
   }
 
-  return <>{JSON.stringify(question)}</>;
+  return <PageBuilder question={question} />;
 }

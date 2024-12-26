@@ -7,7 +7,6 @@ export const isQuestion = (question: any): question is Question => {
     typeof question === "object" &&
     question !== null &&
     typeof question.id === "string" &&
-    typeof question.pageType === "string" &&
-    Array.isArray(question.components)
+    typeof question.pageType === "string"
   );
 };

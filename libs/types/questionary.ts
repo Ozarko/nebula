@@ -2,6 +2,7 @@ import { QuestionaryComponentType } from "@enums/questionary";
 
 export type QuestionComponentType<TQType, TQConfig> = {
   type: TQType;
+  id: string;
   config: Record<string, TQConfig>;
 };
 
@@ -41,10 +42,26 @@ export type QuestionComponentsType = (
   | SurveyButtonType
 )[];
 
-export type Question = {
+export type BaseQuestion = {
   id: string;
   pageType: string;
+};
+
+export type BlockBuilderQuestion = BaseQuestion & {
   components: QuestionComponentsType;
 };
 
-export type QuestionaryType = Record<string, Question>;
+export type SomeOtherPageType = BaseQuestion & {
+  someOtherProp: string;
+};
+
+export type OneMorePageType = BaseQuestion & {
+  oneMoreProp: string;
+};
+
+export type Question =
+  | BlockBuilderQuestion
+  | SomeOtherPageType
+  | OneMorePageType;
+
+export type QuestionaryType = Record<string, SomeOtherPageType>;

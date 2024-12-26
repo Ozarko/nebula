@@ -10,6 +10,7 @@
       "@components/*": ["./libs/components/*"],
       "@enums/*": ["./libs/enums/*"],
       "@mock/*": ["./libs/mock/*"],
+      "@page-builder/*": ["./libs/page-builder/*"],
       "@/*": ["./*"]
     }
   }

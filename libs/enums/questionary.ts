@@ -1,7 +1,7 @@
 export enum QuestionaryPageType {
   BlockBuilder = "block-builder",
-  SomeOtherPageType = "some-other-page-type",
-  OneMorePageType = "one-more-page-type",
+  SomeOtherPage = "some-other-page",
+  OneMorePage = "one-more-page",
 }
 
 export enum QuestionaryComponentType {

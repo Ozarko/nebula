@@ -3,9 +3,9 @@ import "server-only";
 import { surveys } from "@mock/database-mock";
 import { Nullable } from "@typeslib/general";
 import { Question } from "@typeslib/questionary";
-import { getValidSurveyId } from "@utils/data/survey-validation/get-valid-survey-id";
-import { getValidQuestionId } from "@utils/data/survey-validation/get-valid-question-id";
-import { isQuestion } from "@utils/data/survey-validation/is-question";
+import { getValidSurveyId } from "@utils/types-guard/survey-validation/get-valid-survey-id";
+import { getValidQuestionId } from "@utils/types-guard/survey-validation/get-valid-question-id";
+import { isQuestion } from "@utils/types-guard/survey-validation/is-question";
 
 export const getSurveyByConfig = (
   surveyId: string,
