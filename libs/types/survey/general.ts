@@ -1,4 +1,3 @@
-import { SurveyComponentEnum } from "@enums/survey";
 import {
   BlockBuilderQuestion,
   OneMorePageType,
@@ -14,3 +13,10 @@ export type Question =
   | BlockBuilderQuestion
   | SomeOtherPageType
   | OneMorePageType;
+
+export type SurveyType = {
+  surveyType: string;
+  surveyUrlPart: string;
+  initialQuestionId: string;
+  questions: Record<string, Question>;
+};

@@ -8,17 +8,17 @@ import { isQuestion } from "@utils/types-guard/survey-validation/is-question";
 import { Question } from "@typeslib/survey/general";
 
 export const getSurveyByConfig = (
-  surveyId: string,
+  surveyURlPart: string,
   questionId: string,
 ): Nullable<Question> => {
   try {
-    const validSurveyId = getValidSurveyId(surveyId);
+    const validSurveyId = getValidSurveyId(surveyURlPart);
     const validQuestionId = getValidQuestionId(validSurveyId, questionId);
 
     if (!validSurveyId || !validQuestionId) return null;
 
     const survey = surveys[validSurveyId];
-    const question = survey[validQuestionId];
+    const question = survey.questions[validQuestionId];
 
     if (!isQuestion(question)) {
       throw new Error(

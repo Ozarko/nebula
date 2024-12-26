@@ -12,5 +12,7 @@ export const getValidQuestionId = (
       `Question with ID '${questionId}' not found in survey '${surveyId}'.`,
     );
   }
-  return questionId as keyof (typeof surveys)[keyof typeof surveys];
+  const survey = surveys[surveyId];
+
+  return questionId as keyof typeof survey.questions;
 };

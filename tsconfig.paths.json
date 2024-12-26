@@ -11,6 +11,10 @@
       "@enums/*": ["./libs/enums/*"],
       "@mock/*": ["./libs/mock/*"],
       "@page-builder/*": ["./libs/page-builder/*"],
+      "@store/*": ["./libs/store/*"],
+      "@hooks/*": ["./libs/hooks/*"],
+      "@providers/*": ["./libs/providers/*"],
+      "@services/*": ["./libs/services/*"],
       "@/*": ["./*"]
     }
   }

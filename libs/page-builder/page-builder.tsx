@@ -3,7 +3,7 @@ import "server-only";
 import dynamic from "next/dynamic";
 import { redirect } from "next/navigation";
 
-import { StaticPagePath } from "@enums/static-page-path";
+import { StaticPagePath } from "@enums/general/static-page-path";
 import { Question } from "@typeslib/survey/general";
 import { isBlockBuilderQuestion } from "@utils/types-guard/page-builder/is-block-builder-question";
 import { isOneMorePage } from "@utils/types-guard/page-builder/is-one-more-page";

@@ -1,4 +1,4 @@
-import { SomeOtherPageType } from "@typeslib/questionary";
+import { SomeOtherPageType } from "@typeslib/survey/page-types";
 import { TypographyH2 } from "@ui/typography/typographyH2";
 import { TypographyP } from "@ui/typography/typographyP";
 

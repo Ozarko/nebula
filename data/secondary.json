@@ -1,0 +1,47 @@
+{
+  "surveyType": "secondary",
+  "surveyUrlPart": "secondary",
+  "initialQuestionId": "prelanding",
+  "questions": {
+    "prelanding": {
+      "id": "prelanding",
+      "pageType": "block-builder",
+      "components": [
+        {
+          "type": "header",
+          "config": {
+            "title": "Select your gender:"
+          },
+          "id": "b696-9873-4479-be84-0000-eda2-f7cd-2a14"
+        },
+        {
+          "type": "description",
+          "config": {
+            "text": "I am secondary survey"
+          },
+          "id": "b696-9873-4479-be84-d6bf-eda2-0000-2a14"
+        },
+        {
+          "type": "survey-button",
+          "config": {
+            "title": "Female",
+            "value": "Female",
+            "storageKey": "gender",
+            "nextUrl": "/secondary/flow-choice"
+          },
+          "id": "646d-0000-4271-9ddb-7930-5517-7a52-3a69"
+        },
+        {
+          "type": "survey-button",
+          "config": {
+            "title": "Male",
+            "value": "Male",
+            "storageKey": "gender",
+            "nextUrl": "/secondary/flow-choice"
+          },
+          "id": "5eb6-f96b-4133-9b9a-cc93-77fc-ac38-0000"
+        }
+      ]
+    }
+  }
+}

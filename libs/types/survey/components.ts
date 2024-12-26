@@ -1,4 +1,4 @@
-import { SurveyComponentEnum } from "@enums/survey";
+import { SurveyComponentEnum } from "@enums/survey/survey";
 
 export type QuestionComponentType<TQType, TQConfig> = {
   type: TQType;

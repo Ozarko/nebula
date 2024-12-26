@@ -1,4 +1,4 @@
-import { SurveyPageEnum } from "@enums/survey";
+import { SurveyPageEnum } from "@enums/survey/survey";
 import { Question } from "@typeslib/survey/general";
 import { OneMorePageType } from "@typeslib/survey/page-types";
 

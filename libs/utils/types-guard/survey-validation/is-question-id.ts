@@ -6,5 +6,7 @@ export const isQuestionId = (
   surveyId: keyof typeof surveys,
   questionId: string,
 ): boolean => {
-  return questionId in surveys[surveyId];
+  const survey = surveys[surveyId];
+
+  return questionId in survey.questions;
 };

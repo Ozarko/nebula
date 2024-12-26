@@ -1,11 +1,14 @@
 import "server-only";
 
-import { RouterButton } from "@components/buttons/router-button";
 import { Navigation } from "@components/layout/navigation";
+import { SurveyStartButton } from "@components/survey/survey-start-button";
+import { getSurveysConfig } from "@services/get-surveys-config";
 import { TypographyH2 } from "@ui/typography/typographyH2";
 import { TypographyP } from "@ui/typography/typographyP";
 
 export default function Home() {
+  const surveysConfig = getSurveysConfig();
+
   return (
     <>
       <Navigation />
@@ -20,7 +23,15 @@ export default function Home() {
             goals with personalized readings and professional guidance from
             Nebula.
           </TypographyP>
-          <RouterButton href="/main/prelanding">Start Survey</RouterButton>
+          {surveysConfig.map(({ surveyType, initialUrl }) => (
+            <SurveyStartButton
+              key={surveyType}
+              href={initialUrl}
+              surveyType={surveyType}
+            >
+              Start {surveyType} Survey
+            </SurveyStartButton>
+          ))}
         </div>
       </main>
     </>

@@ -7,7 +7,7 @@ import { isSurveyDescriptionComponent } from "@utils/types-guard/block-builder/i
 import { isSurveyHeaderComponent } from "@utils/types-guard/block-builder/is-survey-header";
 
 const SurveyButton = dynamic(async () => {
-  const { SurveyButton } = await import("@components/buttons/survey-button");
+  const { SurveyButton } = await import("@components/survey/survey-button");
   return SurveyButton;
 });
 

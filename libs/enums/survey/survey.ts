@@ -1,3 +1,8 @@
+export enum SurveysTypeEnum {
+  Main = "main",
+  Secondary = "secondary",
+}
+
 export enum SurveyPageEnum {
   BlockBuilder = "block-builder",
   SomeOtherPage = "some-other-page",

@@ -1,4 +1,4 @@
-import { SurveyComponentEnum } from "@enums/survey";
+import { SurveyComponentEnum } from "@enums/survey/survey";
 import {
   QuestionComponentsType,
   SurveyHeaderType,
