@@ -20,7 +20,7 @@ export default function Home() {
             goals with personalized readings and professional guidance from
             Nebula.
           </TypographyP>
-          <RouterButton href="/main/prelanding">Start Questionary</RouterButton>
+          <RouterButton href="/main/prelanding">Start Survey</RouterButton>
         </div>
       </main>
     </>

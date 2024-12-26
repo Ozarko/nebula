@@ -5,7 +5,7 @@ import {
 } from "@typeslib/survey/components";
 
 export const isSurveyDescriptionComponent = (
-  config: QuestionComponentsType
+  config: QuestionComponentsType,
 ): config is SurveyDescriptionType => {
   return config.type === SurveyComponentEnum.Description;
 };
