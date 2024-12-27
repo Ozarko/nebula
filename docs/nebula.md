@@ -103,19 +103,19 @@ This document outlines the architecture for an application designed to create an
 
   - [x] Create a basic structure for survey pages and blocks including "how does it works" page.
 
-- [ ] **State Manager Implementation**
+- [x] **State Manager Implementation**
 
-  - Set up Redux for storing user responses and survey state.
+  - [x] Set up Redux for storing user responses and survey state.
 
-- [ ] **Dynamic Placeholder Handling**
+- [x] **Dynamic Placeholder Handling**
 
-  - Implement functionality to replace `{}` in question text with corresponding values.
+  - [x]Implement functionality to replace `{}` in question text with corresponding values.
 
-- [ ] **Final Screen Implementation**
+- [x] **Final Screen Implementation**
 
-  - Develop a screen to display user responses.
+  - [x] Develop a screen to display user responses.
 
-- [ ] **Optimization and Refactoring**
+- [x] **Optimization and Refactoring**
   - Review code, fix any issues, and improve structure if needed.
 
 ---
