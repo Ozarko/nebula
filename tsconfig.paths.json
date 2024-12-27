@@ -17,6 +17,7 @@
       "@services/*": ["./libs/services/*"],
       "@regex/*": ["./libs/regex/*"],
       "@hoc/*": ["./libs/hoc/*"],
+      "@middleware/*": ["./libs/middleware/*"],
       "@/*": ["./*"]
     }
   }
