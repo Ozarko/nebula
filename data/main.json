@@ -1085,6 +1085,17 @@
       "id": "results",
       "pageType": "results",
       "pageVariant": "special",
+      "header": {
+        "navConfig": {
+          "variant": "special"
+        },
+        "navLogoConfig": {
+          "variant": "secondary"
+        },
+        "historyBackConfig": {
+          "variant": "secondary"
+        }
+      },
       "matchers": {
         "gender": [
           {

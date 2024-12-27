@@ -1,4 +1,7 @@
-import { QuestionComponentsType } from "./components";
+import {
+  QuestionComponentsType,
+  SurveyNavigationConfigType,
+} from "./components";
 import { BaseQuestion } from "./general";
 
 export type OneMorePageType = BaseQuestion & {
@@ -14,6 +17,7 @@ export type ResultsPageMatchersType = Record<string, ResultsPageMatcherType[]>;
 
 export type ResultsPageType = BaseQuestion & {
   matchers: ResultsPageMatchersType;
+  header: SurveyNavigationConfigType;
 };
 
 export type BlockBuilderQuestion = BaseQuestion & {
