@@ -18,7 +18,9 @@ export const ResultsPage = ({ matchers }: ResultsPageType) => {
 
   return (
     <div className="max-w-2xl flex flex-col items-center justify-center gap-6 h-[80vh]">
-      <TypographyH1 variant="special">What we have found for you</TypographyH1>
+      <TypographyH1 variant="special">
+        What we have found for you based on your answers
+      </TypographyH1>
       <TypographyP variant="special">{withReplacedLiterals}</TypographyP>
       <div className="w-fit">
         <SurveyTypeButton href={"/"} surveyType={""}>
