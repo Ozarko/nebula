@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nebula
+
+Welcome to the Nebula project! This repository contains the source code for the Nebula Test application.
+
+## About Nebula
+
+[Nebula](https://asknebula.com/) is a platform that provides personalized astrology readings and insights. It helps users understand their astrological profiles and offers guidance based on their unique astrological data.
 
 ## Getting Started
 
-First, run the development server:
+To get started with the Nebula Test project, follow the instructions below.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ensure you have the following installed on your machine:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Node.js (version 16 or higher)
+- npm (version 7 or higher)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Installation
 
-## Learn More
+1. Clone the repository:
 
-To learn more about Next.js, take a look at the following resources:
+   ```sh
+   git clone https://github.com/your-username/nebula.git
+   cd nebula
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install the dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```sh
+   npm install
+   ```
 
-## Deploy on Vercel
+### Scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The following scripts are available in the project:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **dev**: Starts the development server using Next.js with Turbopack.
+
+  ```sh
+  npm run dev
+  ```
+
+- **build**: Builds the application for production.
+
+  ```sh
+  npm run build
+  ```
+
+- **start**: Starts the production server.
+
+  ```sh
+  npm run start
+  ```
+
+- **lint**: Runs ESLint to check for linting errors.
+
+  ```sh
+  npm run lint
+  ```
+
+- **lint:fix**: Runs ESLint and automatically fixes linting errors.
+
+  ```sh
+  npm run lint:fix
+  ```
+
+- **format**: Runs linting and Prettier to format the code.
+
+  ```sh
+  npm run format
+  ```
+
+- **prettier**: Runs Prettier to format the code.
+
+  ```sh
+  npm run prettier
+  ```
+
+- **prepare**: Prepares Husky for Git hooks.
+
+  ```sh
+  npm run prepare
+  ```
+
+- **commitlint**: Runs Commitlint to check commit messages.
+
+  ```sh
+  npm run commitlint
+  ```
+
+### Dependencies
+
+The project uses the following dependencies:
+
+- **@reduxjs/toolkit**: ^2.5.0
+- **@svgr/webpack**: ^8.1.0
+- **class-variance-authority**: ^0.7.1
+- **clsx**: ^2.1.1
+- **next**: 15.1.2
+- **react**: ^19.0.0
+- **react-dom**: ^19.0.0
+- **react-redux**: ^9.2.0
+- **tailwind-merge**: ^2.6.0
+
+### Dev Dependencies
+
+The project uses the following dev dependencies:
+
+- **@commitlint/cli**: ^19.6.1
+- **@commitlint/config-conventional**: ^19.6.0
+- **@eslint/eslintrc**: ^3
+- **@total-typescript/ts-reset**: ^0.6.1
+- **@types/node**: ^20
+- **@types/react**: ^19
+- **@types/react-dom**: ^19
+
+## Contributing
+
+Contributions are welcome! Please follow the guidelines below:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Commit your changes with a descriptive commit message.
+4. Push your changes to your fork.
+5. Create a pull request to the main repository.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contact
+
+For any questions or inquiries, please contact us at [ozarkonv@gmail.com](mailto:ozarkonv@gmail.com).
