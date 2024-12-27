@@ -1,3 +1,12 @@
+import { Main } from "@ui/layout/main";
+
 export default function Loading() {
-  return <p>Loading...</p>;
+  return (
+    <Main
+      variant="special"
+      className="flex justify-center items-center h-screen"
+    >
+      <p>Loading...</p>;
+    </Main>
+  );
 }
