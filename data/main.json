@@ -269,7 +269,7 @@
         }
       ]
     },
-    "traits-emotional-control desktop": {
+    "traits-emotional-control": {
       "id": "traits-emotional-control",
       "pageType": "block-builder",
       "components": [
@@ -770,15 +770,165 @@
         }
       ]
     },
-    "some-other-page": {
-      "id": "some-other-page-type",
-      "pageType": "some-other-page",
-      "someOtherProp": "someOtherValue"
-    },
-    "one-more-page": {
-      "id": "one-more-page-type",
-      "pageType": "one-more-page",
-      "oneMoreProp": "oneMoreValue"
+    "results": {
+      "id": "results",
+      "pageType": "results",
+      "matchers": {
+        "gender": [
+          {
+            "matcher": "Female",
+            "description": "Hello! You’re about to embark on a journey crafted just for you—full of insights, growth, and understanding."
+          },
+          {
+            "matcher": "Male",
+            "description": "Hi! Your personalized path begins here. Let’s explore what makes you unique and help you thrive."
+          }
+        ],
+        "relationshipStatus": [
+          {
+            "matcher": "Single",
+            "description": "Being {{relationshipStatus}} is a powerful time to focus on yourself and the endless possibilities ahead."
+          },
+          {
+            "matcher": "In a relationship",
+            "description": "Your {{relationshipStatus}} status shows your commitment to shared goals and meaningful connections."
+          }
+        ],
+        "children": [
+          {
+            "matcher": "Yes",
+            "description": "Parenthood is an incredible journey that shapes your world in extraordinary ways. We see your strength and dedication."
+          },
+          {
+            "matcher": "No",
+            "description": "Without the responsibilities of parenthood, you have a unique opportunity to focus on self-discovery and building deep connections."
+          }
+        ],
+        "problem": [
+          {
+            "matcher": "I was unhappy with low things were going in my relationship",
+            "description": "It’s clear you’ve faced challenges in the past, but recognizing them is a huge step forward. We’re here to guide you."
+          },
+          {
+            "matcher": "I was unhappy with parts of my relationship, but some thing were working",
+            "description": "Your ability to see both the good and the challenging parts of your relationship shows your thoughtfulness and self-awareness."
+          },
+          {
+            "matcher": "I was generally happy with my relationship",
+            "description": "It’s wonderful to hear about the positivity in your past relationship—it’s a strong foundation to build on."
+          },
+          {
+            "matcher": "I’ve never been in a relationship",
+            "description": "Starting fresh without past relationship experiences is exciting! Every step ahead is an opportunity to learn and grow."
+          }
+        ],
+        "overthink": [
+          {
+            "matcher": "Yes",
+            "description": "Overthinking can sometimes feel overwhelming, but it’s also a sign of deep thought and care. Together, we’ll bring clarity."
+          },
+          {
+            "matcher": "No",
+            "description": "Staying grounded and present is a fantastic skill, and it will serve you well as you navigate your journey."
+          }
+        ],
+        "mostImportant": [
+          {
+            "matcher": "Success",
+            "description": "Your focus on success shows your drive to achieve and make a meaningful impact in life and relationships."
+          },
+          {
+            "matcher": "Romance",
+            "description": "Your heart leads the way, with romance as your guiding star. It’s a beautiful priority to have."
+          },
+          {
+            "matcher": "Stability",
+            "description": "Stability is the cornerstone of your happiness—it shows your desire for balance and a strong foundation."
+          },
+          {
+            "matcher": "Freedom",
+            "description": "Freedom fuels your spirit, highlighting your need to explore, grow, and embrace independence."
+          }
+        ],
+        "emotional-control": [
+          {
+            "matcher": "Yes",
+            "description": "Navigating emotions can be tricky, but the fact that you’re aware of this shows great strength and self-awareness."
+          },
+          {
+            "matcher": "Sometimes",
+            "description": "Sometimes, emotions can feel complex, but your ability to reflect on this is a testament to your resilience."
+          },
+          {
+            "matcher": "Rarely",
+            "description": "Rarely struggling with emotional control is a wonderful sign of balance and inner peace."
+          },
+          {
+            "matcher": "Not at all",
+            "description": "You’ve mastered emotional control—a powerful skill that will guide you in every aspect of life."
+          }
+        ],
+        "partnerIntrovertOrExtrovert": [
+          {
+            "matcher": "Introvert",
+            "description": "You see your partner as an introvert, bringing thoughtfulness and depth to your connection."
+          },
+          {
+            "matcher": "Extrovert",
+            "description": "Your partner’s extroverted nature brings energy and enthusiasm to your relationship."
+          },
+          {
+            "matcher": "A bit of both",
+            "description": "Your partner’s blend of introverted and extroverted traits adds a rich dynamic to your bond."
+          }
+        ],
+        "partnerGender": [
+          {
+            "matcher": "Male",
+            "description": "Your partner’s gender is Male, shaping the unique story of your relationship."
+          },
+          {
+            "matcher": "Female",
+            "description": "Your partner’s gender is Female, creating a unique dynamic in your connection."
+          }
+        ],
+        "partnerPriority": [
+          {
+            "matcher": "Strongly agree",
+            "description": "You strongly agree on prioritizing intimacy—a foundation for meaningful and connected relationships."
+          },
+          {
+            "matcher": "Agree",
+            "description": "You value intimacy in your relationship, recognizing its importance in building connection and trust."
+          },
+          {
+            "matcher": "Neutral",
+            "description": "You feel neutral about prioritizing intimacy, showing a balanced and reflective perspective."
+          },
+          {
+            "matcher": "Disagree",
+            "description": "Your approach to intimacy is unique, and that perspective adds depth to your relationship."
+          },
+          {
+            "matcher": "Strongly disagree",
+            "description": "You see intimacy differently, focusing on other priorities that matter most to you."
+          }
+        ],
+        "relationshipGoals": [
+          {
+            "matcher": "Optimistic! They are totally doable, with some guidance.",
+            "description": "Your optimism about your relationship goals is inspiring—together, we’ll make them a reality."
+          },
+          {
+            "matcher": "Cautious. I’ve struggled before, but I’m hopeful.",
+            "description": "Your cautious hopefulness shows resilience and determination. We’re here to support you every step of the way."
+          },
+          {
+            "matcher": "I’m feeling a little anxious, honestly.",
+            "description": "Feeling anxious is natural when thinking about big goals. Let’s take it step by step and build your confidence."
+          }
+        ]
+      }
     }
   }
 }

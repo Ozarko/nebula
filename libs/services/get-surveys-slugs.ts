@@ -9,7 +9,7 @@ type SurveySlugs = {
 export const getSurveysSlugs = () => {
   // let's imagine that here we have a real API call
   return Object.values(surveys).reduce((acc: SurveySlugs[], survey) => {
-    for (const id of Object.keys(survey)) {
+    for (const id of Object.keys(survey.questions)) {
       acc.push({ slug: [survey.surveyUrlPart, id] });
     }
     return acc;

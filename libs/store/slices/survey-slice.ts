@@ -2,13 +2,15 @@ import type { PayloadAction } from "@reduxjs/toolkit";
 import { createAppSlice } from "../create-app-slice";
 import { StorageSlicesEnum } from "@enums/storage/storage";
 
+export type SurveyAnswer = {
+  id: string;
+  value: string;
+  literalKey: string;
+};
+
 export type SurveyState = {
   selectedSurvey: string;
-  surveyAnswers: {
-    id: string;
-    value: string;
-    literalKey: string;
-  }[];
+  surveyAnswers: SurveyAnswer[];
 };
 
 const initialState: SurveyState = {
@@ -24,7 +26,7 @@ export const surveySlice = createAppSlice({
       (state, action: PayloadAction<{ value: string }>) => {
         state.selectedSurvey = action.payload.value;
         state.surveyAnswers = [];
-      },
+      }
     ),
     setSurveyAnswer: create.reducer(
       (
@@ -33,14 +35,19 @@ export const surveySlice = createAppSlice({
           id: string;
           value: string;
           literalKey: string;
-        }>,
+        }>
       ) => {
-        state.surveyAnswers.push({
-          id: action.payload.id,
-          value: action.payload.value,
-          literalKey: action.payload.literalKey,
-        });
-      },
+        const { id, value, literalKey } = action.payload;
+        const surveyAnswer = state.surveyAnswers.find(
+          (answer) => answer.id === id
+        );
+        if (surveyAnswer) {
+          surveyAnswer.value = value;
+          surveyAnswer.literalKey = literalKey;
+        } else {
+          state.surveyAnswers.push({ id, value, literalKey });
+        }
+      }
     ),
   }),
   selectors: {

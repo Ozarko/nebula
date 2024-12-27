@@ -7,10 +7,9 @@ import { SurveyButtonType } from "@typeslib/survey/components";
 import { WithQuestionId } from "@typeslib/survey/general";
 import { withSurveyPathUrl } from "@utils/survey/withSurveyPathUrl";
 
-export const SurveyButton = ({
-  config,
-  questionId,
-}: WithQuestionId<SurveyButtonType>) => {
+type SurveyButtonProps = WithQuestionId<SurveyButtonType>;
+
+export const SurveyButton = ({ config, questionId }: SurveyButtonProps) => {
   const dispatch = useAppDispatch();
 
   const { title, nextUrl, value, literalKey } = config;

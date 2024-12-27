@@ -1,6 +1,6 @@
 import "server-only";
 
-import { SurveyGuard } from "@/libs/guards/SurveyGuard";
+import { SurveyGuard } from "@/libs/guards/survey-guard";
 import { Navigation } from "@components/layout/navigation";
 import { LayoutProps } from "@typeslib/app";
 

@@ -2,11 +2,12 @@
 
 import { useSearchParams } from "next/navigation";
 
+import { withSuspense } from "@hoc/withSuspense";
 import { QueryUrlButtonType } from "@typeslib/survey/components";
 
 import { RouterButton } from "./router-button";
 
-export const QueryUrlButton = ({ config }: QueryUrlButtonType) => {
+export const QueryUrlButton = withSuspense(({ config }: QueryUrlButtonType) => {
   const { title, queryKey } = config;
 
   const params = useSearchParams();
@@ -20,4 +21,4 @@ export const QueryUrlButton = ({ config }: QueryUrlButtonType) => {
       {title}
     </RouterButton>
   );
-};
+});

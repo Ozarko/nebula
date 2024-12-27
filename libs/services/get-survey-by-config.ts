@@ -28,7 +28,7 @@ export const getSurveyByConfig = (
 
     return question;
   } catch (e) {
-    console.error("Error in getSurveyByConfig:", e);
+    console.error("Error in getSurveyByConfig");
     return null;
   }
 };

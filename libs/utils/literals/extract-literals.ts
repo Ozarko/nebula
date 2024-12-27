@@ -1,6 +1,8 @@
 import { SimpleLiteralRegex, ConditionalLiteralRegex } from "@regex/literals";
 
 export const extractLiterals = (str: string): string[] => {
+  if (!str?.length) return [];
+
   const literals = new Set<string>();
 
   const simpleMatches = str.matchAll(SimpleLiteralRegex);

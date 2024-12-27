@@ -1,7 +1,7 @@
 import {
   BlockBuilderQuestion,
   OneMorePageType,
-  SomeOtherPageType,
+  ResultsPageType,
 } from "./page-types";
 
 export type BaseQuestion = {
@@ -9,10 +9,7 @@ export type BaseQuestion = {
   pageType: string;
 };
 
-export type Question =
-  | BlockBuilderQuestion
-  | SomeOtherPageType
-  | OneMorePageType;
+export type Question = BlockBuilderQuestion | ResultsPageType | OneMorePageType;
 
 export type SurveyType = {
   surveyType: string;

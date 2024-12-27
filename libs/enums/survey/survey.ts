@@ -5,7 +5,7 @@ export enum SurveysTypeEnum {
 
 export enum SurveyPageEnum {
   BlockBuilder = "block-builder",
-  SomeOtherPage = "some-other-page",
+  Results = "results",
   OneMorePage = "one-more-page",
 }
 
