@@ -12,7 +12,7 @@ export const useSurveyLiterals = (text: string) => {
   const selectedLiterals = literalsArray.reduce(
     (acc: Record<string, string>, literal) => {
       const foundedLiteral = surveyAnswersList.find(
-        (answer) => answer.literalKey === literal
+        (answer) => answer.literalKey === literal,
       );
 
       if (foundedLiteral) {
@@ -20,7 +20,7 @@ export const useSurveyLiterals = (text: string) => {
       }
       return acc;
     },
-    {}
+    {},
   );
 
   if (!literalsArray?.length) return text;

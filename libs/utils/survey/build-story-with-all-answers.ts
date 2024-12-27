@@ -3,7 +3,7 @@ import { ResultsPageMatchersType } from "@typeslib/survey/page-types";
 
 export const buildStoryWithAllAnswers = (
   storyConfig: ResultsPageMatchersType,
-  userAnswers: SurveyAnswer[]
+  userAnswers: SurveyAnswer[],
 ) => {
   const storyParts: string[] = [];
   const userAnswersMap = userAnswers.reduce(
@@ -11,7 +11,7 @@ export const buildStoryWithAllAnswers = (
       acc[answer.literalKey] = answer.value;
       return acc;
     },
-    {}
+    {},
   );
 
   const userAnswerEntries = Object.entries(userAnswersMap);
