@@ -10,12 +10,14 @@ import { withSurveyPathUrl } from "@utils/survey/withSurveyPathUrl";
 
 type SurveyStartButtonProps = RouterButtonProps & {
   surveyType: string;
+  withSurveyPath?: boolean;
 };
 
 export const SurveyTypeButton = ({
   href,
   surveyType,
   children,
+  withSurveyPath = true,
   ...rest
 }: SurveyStartButtonProps) => {
   const dispatch = useAppDispatch();
@@ -24,7 +26,9 @@ export const SurveyTypeButton = ({
     dispatch(changeSurveyType({ value: surveyType }));
   };
 
-  const nextUrl = withSurveyPathUrl(href);
+  const withSurveyUrl = withSurveyPathUrl(href);
+
+  const nextUrl = withSurveyPath ? withSurveyUrl : href;
 
   return (
     <RouterButton href={nextUrl} onClick={handleStartSurvey} {...rest}>

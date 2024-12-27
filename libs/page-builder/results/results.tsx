@@ -23,7 +23,7 @@ export const ResultsPage = ({ matchers }: ResultsPageType) => {
       </TypographyH1>
       <TypographyP variant="special">{withReplacedLiterals}</TypographyP>
       <div className="w-fit">
-        <SurveyTypeButton href={"/"} surveyType={""}>
+        <SurveyTypeButton href={"/"} surveyType={""} withSurveyPath={false}>
           Discover the futures
         </SurveyTypeButton>
       </div>
