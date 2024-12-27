@@ -6,7 +6,7 @@ import { MouseEvent } from "react";
 
 import { Button, ButtonProps } from "@ui/button";
 
-type RouterButtonProps = ButtonProps & {
+export type RouterButtonProps = ButtonProps & {
   href: string;
   navigationOptions?: NavigateOptions;
 };

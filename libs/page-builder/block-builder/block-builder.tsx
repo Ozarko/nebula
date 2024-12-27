@@ -3,8 +3,10 @@ import dynamic from "next/dynamic";
 import { ButtonSkeleton } from "@components/skeletons/button-skeleton";
 import { DescriptionSkeleton } from "@components/skeletons/description-skeleton";
 import { HeaderSkeleton } from "@components/skeletons/header-skeleton";
+import { NavSkeleton } from "@components/skeletons/nav-skeleton";
 import { QuestionComponentsType } from "@typeslib/survey/components";
 import { WithQuestionId } from "@typeslib/survey/general";
+import { isSurveyNavigationComponent } from "@utils/types-guard/block-builder/is-navigation";
 import { isSurveyQueryUrlButtonComponent } from "@utils/types-guard/block-builder/is-query-url-button";
 import { isSurveyButtonComponent } from "@utils/types-guard/block-builder/is-survey-button";
 import { isSurveyDescriptionComponent } from "@utils/types-guard/block-builder/is-survey-description";
@@ -42,12 +44,22 @@ const SurveyDescription = dynamic(
 
 const SurveyQueryUrlButton = dynamic(
   async () => {
-    const { QueryUrlButton } = await import(
-      "@components/buttons/query-url-button"
+    const { SurveyQueryUrlButton } = await import(
+      "@components/survey/buttons/survey-query-url-button"
     );
-    return QueryUrlButton;
+    return SurveyQueryUrlButton;
   },
   { loading: () => <ButtonSkeleton /> },
+);
+
+const SurveyNavigation = dynamic(
+  async () => {
+    const { SurveyNavigation } = await import(
+      "@components/survey/layout/survey-navigation"
+    );
+    return SurveyNavigation;
+  },
+  { loading: () => <NavSkeleton /> },
 );
 
 export const BlockBuilder = ({
@@ -63,6 +75,8 @@ export const BlockBuilder = ({
       return <SurveyDescription {...props} />;
     case isSurveyQueryUrlButtonComponent(props):
       return <SurveyQueryUrlButton {...props} />;
+    case isSurveyNavigationComponent(props):
+      return <SurveyNavigation {...props} />;
     default:
       return null;
   }

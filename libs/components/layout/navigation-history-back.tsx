@@ -1,11 +1,13 @@
-import Image from "next/image";
-
+import {
+  ChevronLeftIcon,
+  ChevronLeftIconVariantsType,
+} from "@/libs/icons/chevron-left/chevron-left-icon";
 import { HistoryBackButton } from "@components/buttons/history-back";
 
-export const NavigationHistoryBack = () => {
+export const NavigationHistoryBack = (props: ChevronLeftIconVariantsType) => {
   return (
     <HistoryBackButton>
-      <Image src="/chevron.svg" alt="Back" width={24} height={24} />
+      <ChevronLeftIcon {...props} />
     </HistoryBackButton>
   );
 };

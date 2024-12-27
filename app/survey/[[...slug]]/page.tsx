@@ -4,10 +4,12 @@ import { redirect } from "next/navigation";
 
 import { StaticPagePath } from "@enums/general/static-page-path";
 import { PageBuilder } from "@page-builder/page-builder";
-import { getSurveyByConfig } from "@services/get-survey-by-config";
+import { getQuestionByConfig } from "@services/get-question-by-config";
 import { getSurveysConfig } from "@services/get-surveys-config";
 import { getSurveysSlugs } from "@services/get-surveys-slugs";
 import { PageProps } from "@typeslib/app";
+import { Main, validateMainVariant } from "@ui/layout/main";
+import { Section } from "@ui/layout/section";
 import { handleSurveySlug } from "@utils/survey/handleSurveySlug";
 
 export async function generateStaticParams() {
@@ -29,11 +31,19 @@ export default async function SurveyItemPage({ params }: SurveyItemPageProps) {
 
   const { surveyType, questionId } = slugObject;
 
-  const question = getSurveyByConfig(surveyType, questionId);
+  const question = getQuestionByConfig(surveyType, questionId);
 
   if (!question) {
     redirect(StaticPagePath.NotFound);
   }
 
-  return <PageBuilder question={question} />;
+  const mainVariant = validateMainVariant(question.pageVariant);
+
+  return (
+    <Main variant={mainVariant}>
+      <Section>
+        <PageBuilder question={question} />
+      </Section>
+    </Main>
+  );
 }

@@ -1,29 +1,64 @@
-import Image from "next/image";
-
-import { Nav, navVariantsType } from "@ui/layout/nav";
+import {
+  ChevronLeftIconVariantsType,
+  validateChevronLeftVariant,
+} from "@/libs/icons/chevron-left/chevron-left-icon";
+import {
+  NavLogoIcon,
+  NavLogoVariantsType,
+  validateNavLogoVariant,
+} from "@/libs/icons/nav-logo/nav-logo-icon";
+import { Nav, NavVariantsType, validateNavVariant } from "@ui/layout/nav";
 import { cn } from "@utils/ui/cn";
 
 import { NavigationHistoryBack } from "./navigation-history-back";
 
-interface NavigationProps {
-  withHistoryBack?: boolean;
-  navVariant: navVariantsType;
-}
+export type NavigationProps = Partial<{
+  navConfig: NavVariantsType;
+  historyBackConfig: ChevronLeftIconVariantsType;
+  navLogoConfig: NavLogoVariantsType;
+}>;
+
+type ValidateNavigationVariants = {
+  navConfigKey?: string;
+  historyBackConfigKey?: string;
+  navLogoConfigKey?: string;
+};
+
+export const validateNavigationVariant = ({
+  navConfigKey,
+  historyBackConfigKey,
+  navLogoConfigKey,
+}: ValidateNavigationVariants) => {
+  const navConfigVariant = validateNavVariant(navConfigKey);
+  const navLogoConfigVariant = validateNavLogoVariant(navLogoConfigKey);
+
+  const historyBackConfigVariant =
+    validateChevronLeftVariant(historyBackConfigKey);
+
+  return {
+    navConfigVariant,
+    navLogoConfigVariant,
+    historyBackConfigVariant,
+  };
+};
 
 export const Navigation = ({
-  withHistoryBack,
-  navVariant,
+  historyBackConfig,
+  navConfig,
+  navLogoConfig,
 }: NavigationProps) => {
   return (
-    <Nav {...navVariant}>
-      {withHistoryBack && <NavigationHistoryBack />}
+    <Nav {...navConfig}>
+      {historyBackConfig && <NavigationHistoryBack {...historyBackConfig} />}
       <div
         className={cn(
           "flex flex-1 items-center justify-center",
-          withHistoryBack && " after:content-[''] after:w-6",
+          historyBackConfig && " after:content-[''] after:w-6",
         )}
       >
-        <Image src="/logo_white.svg" alt="Logo" width={24} height={24} />
+        <div className="flex items-center justify-center w-6 h-6">
+          <NavLogoIcon {...navLogoConfig} />
+        </div>
       </div>
     </Nav>
   );

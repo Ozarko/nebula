@@ -11,6 +11,7 @@ export type SurveyButtonConfigType = {
   value: string;
   literalKey: string;
   nextUrl: string;
+  variant: string;
 };
 
 export type SurveyButtonType = QuestionComponentType<
@@ -20,6 +21,7 @@ export type SurveyButtonType = QuestionComponentType<
 
 export type SurveyHeaderConfigType = {
   title: string;
+  variant: string;
 };
 
 export type SurveyHeaderType = QuestionComponentType<
@@ -29,6 +31,7 @@ export type SurveyHeaderType = QuestionComponentType<
 
 export type SurveyDescriptionConfigType = {
   text: string;
+  variant: string;
 };
 
 export type SurveyDescriptionType = QuestionComponentType<
@@ -39,6 +42,7 @@ export type SurveyDescriptionType = QuestionComponentType<
 export type QueryUrlButtonConfigType = {
   title: string;
   queryKey: string;
+  variant: string;
 };
 
 export type QueryUrlButtonType = QuestionComponentType<
@@ -46,8 +50,26 @@ export type QueryUrlButtonType = QuestionComponentType<
   QueryUrlButtonConfigType
 >;
 
+export type SurveyNavigationConfigType = {
+  navConfig?: {
+    variant: string;
+  };
+  navLogoConfig?: {
+    variant: string;
+  };
+  historyBackConfig?: {
+    variant: string;
+  };
+};
+
+export type SurveyNavigationType = QuestionComponentType<
+  SurveyComponentEnum.Navigation,
+  SurveyNavigationConfigType
+>;
+
 export type QuestionComponentsType =
   | SurveyDescriptionType
   | SurveyHeaderType
   | SurveyButtonType
-  | QueryUrlButtonType;
+  | QueryUrlButtonType
+  | SurveyNavigationType;

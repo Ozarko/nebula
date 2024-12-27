@@ -5,14 +5,14 @@ export const getSurveysTypeByUrlPart = (
   configs: SurveyConfig[],
 ) => {
   if (!urlPart) {
-    console.error("getSurveysIdByUrlPart: urlPart is not defined");
+    console.log("getSurveysIdByUrlPart: urlPart is not defined");
     return null;
   }
   const surveyConfig = configs.find(
     (config) => config.surveyUrlPart === urlPart,
   );
   if (!surveyConfig) {
-    console.error("getSurveysIdByUrlPart: surveyConfig is not defined");
+    console.log("getSurveysIdByUrlPart: surveyConfig is not defined");
     return null;
   }
   return surveyConfig.surveyType;

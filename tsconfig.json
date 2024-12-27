@@ -22,11 +22,11 @@
     ]
   },
   "include": [
+    "svgr.d.ts",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts",
-    "temp.js"
+    ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules"],
   "extends": "./tsconfig.paths.json"

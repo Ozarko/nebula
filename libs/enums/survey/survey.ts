@@ -14,4 +14,5 @@ export enum SurveyComponentEnum {
   Header = "header",
   Description = "description",
   QueryUrlButton = "query-url-button",
+  Navigation = "navigation",
 }

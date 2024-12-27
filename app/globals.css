@@ -4,10 +4,12 @@
 
 @layer base {
   :root {
-    --background-main: #fbfbff;
-    --primary: #6a3aa2;
+    --background-main: #fff0f0;
+    --main: #eaeef7;
+    --dark: #201f1f;
     --secondary: #fbfbff;
-    --border: #e6e6e6;
+    --border-main: #e0e0e0;
+    --special: #6a3aa2;
   }
 }
 

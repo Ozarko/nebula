@@ -1,12 +1,12 @@
 import { RouterButton } from "@components/buttons/router-button";
 import { Main } from "@ui/layout/main";
-import { TypographyH2 } from "@ui/typography/typographyH2";
+import { TypographyH1 } from "@ui/typography/typographyH1";
 import { TypographyP } from "@ui/typography/typographyP";
 
 export default function NotFound() {
   return (
     <Main className="flex flex-col justify-center items-center min-h-screen container">
-      <TypographyH2 className="text-6xl font-bold mb-4">404</TypographyH2>
+      <TypographyH1 className="text-6xl font-bold mb-4">404</TypographyH1>
       <TypographyP className="text-xl mb-4">
         Oops! The page you&apos;re looking for seems to have wandered off into
         the cosmos.

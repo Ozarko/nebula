@@ -1,9 +1,11 @@
 import "server-only";
 
-import { SurveyStartButton } from "@components/survey/buttons/survey-start-button";
+import { Navigation } from "@components/layout/navigation";
+import { SurveyTypeButton } from "@components/survey/buttons/survey-type-button";
 import { getSurveysConfig } from "@services/get-surveys-config";
 import { Main } from "@ui/layout/main";
-import { TypographyH2 } from "@ui/typography/typographyH2";
+import { Section } from "@ui/layout/section";
+import { TypographyH1 } from "@ui/typography/typographyH1";
 import { TypographyP } from "@ui/typography/typographyP";
 
 export default function Home() {
@@ -11,27 +13,34 @@ export default function Home() {
 
   return (
     <>
+      <Navigation
+        navConfig={{ variant: "special" }}
+        navLogoConfig={{ variant: "secondary" }}
+      />
       <Main variant="special">
-        <div className="flex flex-col space-y-4 max-w-sub-container">
-          <TypographyH2>
-            Welcome to Nebula - Your Path to Clarity and Happiness
-          </TypographyH2>
-          <TypographyP>
-            Discover the best psychics and astrologers to guide you on your
-            journey to happiness. Gain insights, find clarity, and achieve your
-            goals with personalized readings and professional guidance from
-            Nebula.
-          </TypographyP>
-          {surveysConfig.map(({ surveyType, initialUrl }) => (
-            <SurveyStartButton
-              key={surveyType}
-              href={initialUrl}
-              surveyType={surveyType}
-            >
-              Start {surveyType} Survey
-            </SurveyStartButton>
-          ))}
-        </div>
+        <Section>
+          <div className="flex flex-col  max-w-sub-container">
+            <TypographyH1 variant="special" className="mb-5">
+              Welcome to Nebula
+            </TypographyH1>
+            <TypographyP variant="special" className="mb-10">
+              Discover the best psychics and astrologers to guide you on your
+              journey to happiness.
+            </TypographyP>
+            <div className="flex flex-col gap-4">
+              {surveysConfig.map(({ surveyType, initialUrl }) => (
+                <SurveyTypeButton
+                  key={surveyType}
+                  href={initialUrl}
+                  surveyType={surveyType}
+                  variant="special"
+                >
+                  Start {surveyType} Survey
+                </SurveyTypeButton>
+              ))}
+            </div>
+          </div>
+        </Section>
       </Main>
     </>
   );

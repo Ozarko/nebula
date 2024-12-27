@@ -7,7 +7,7 @@ import { getValidQuestionId } from "@utils/types-guard/survey-validation/get-val
 import { isQuestion } from "@utils/types-guard/survey-validation/is-question";
 import { Question } from "@typeslib/survey/general";
 
-export const getSurveyByConfig = (
+export const getQuestionByConfig = (
   surveyURlPart: string,
   questionId: string,
 ): Nullable<Question> => {
@@ -28,7 +28,7 @@ export const getSurveyByConfig = (
 
     return question;
   } catch (e) {
-    console.error("Error in getSurveyByConfig");
+    console.log("Error in getQuestionByConfig");
     return null;
   }
 };
