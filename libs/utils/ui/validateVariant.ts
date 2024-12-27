@@ -1,6 +1,6 @@
 export const validateVariant = <T extends Object>(
   variantKey?: string,
-  variants?: T
+  variants?: T,
 ): keyof T | undefined => {
   if (!variantKey || !variants) {
     return undefined;

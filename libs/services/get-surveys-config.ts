@@ -9,6 +9,6 @@ export const getSurveysConfig = (): SurveyConfig[] => {
       surveyType,
       initialUrl: `/${surveyUrlPart}/${initialQuestionId}`,
       surveyUrlPart,
-    })
+    }),
   );
 };

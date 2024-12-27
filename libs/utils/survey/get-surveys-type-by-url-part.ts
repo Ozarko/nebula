@@ -2,10 +2,10 @@ import { SurveyConfig } from "@typeslib/services/survey-config";
 
 export const getSurveysTypeByUrlPart = (
   urlPart: string,
-  configs: SurveyConfig[]
+  configs: SurveyConfig[],
 ) => {
   const surveyConfig = configs.find(
-    (config) => config.surveyUrlPart === urlPart
+    (config) => config.surveyUrlPart === urlPart,
   );
 
   if (!surveyConfig) {

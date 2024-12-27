@@ -9,7 +9,7 @@ import { Question } from "@typeslib/survey/general";
 
 export const getQuestionByConfig = (
   surveyURlPart: string,
-  questionId: string
+  questionId: string,
 ): Nullable<Question> => {
   try {
     const validSurveyId = getValidSurveyId(surveyURlPart);
@@ -22,7 +22,7 @@ export const getQuestionByConfig = (
 
     if (!isQuestion(question)) {
       throw new Error(
-        `Invalid question data for questionId '${validQuestionId}'`
+        `Invalid question data for questionId '${validQuestionId}'`,
       );
     }
 
