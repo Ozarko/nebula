@@ -17,7 +17,7 @@ export const ResultsPage = ({ matchers }: ResultsPageType) => {
   const withReplacedLiterals = useSurveyLiterals(storyParts);
 
   return (
-    <div className="max-w-2xl flex flex-col items-center justify-center gap-6">
+    <div className="max-w-2xl flex flex-col items-center justify-center gap-6 h-[80vh]">
       <TypographyH1 variant="special">What we have found for you</TypographyH1>
       <TypographyP variant="special">{withReplacedLiterals}</TypographyP>
       <div className="w-fit">

@@ -1,25 +1,40 @@
 {
   "surveyType": "secondary",
   "surveyUrlPart": "secondary",
-  "initialQuestionId": "prelanding",
+  "initialQuestionId": "prelanding-1",
   "questions": {
-    "prelanding": {
-      "id": "prelanding",
+    "prelanding-1": {
+      "id": "prelanding-1",
       "pageType": "block-builder",
+      "pageVariant": "default",
       "components": [
+        {
+          "type": "navigation",
+          "config": {
+            "navConfig": {
+              "variant": "default"
+            },
+            "navLogoConfig": {
+              "variant": "default"
+            }
+          },
+          "id": "06b2-fdb2-4ada-91df-1231-6494-1dff-6a9s"
+        },
         {
           "type": "header",
           "config": {
-            "title": "Select your gender:"
+            "title": "Select your gender:",
+            "variant": "default"
           },
-          "id": "b696-9873-4479-be84-0000-eda2-f7cd-2a14"
+          "id": "b696-9873-4479-3232-d6bf-eda2-f7cd-2a14"
         },
         {
           "type": "description",
           "config": {
-            "text": "I am secondary survey"
+            "text": "I am secondary survey",
+            "variant": "default"
           },
-          "id": "b696-9873-4479-be84-d6bf-eda2-0000-2a14"
+          "id": "b696-9873-4479-122-d6bf-eda2-f7cd-2a14"
         },
         {
           "type": "survey-button",
@@ -27,9 +42,10 @@
             "title": "Female",
             "value": "Female",
             "literalKey": "gender",
-            "nextUrl": "/secondary/flow-choice"
+            "nextUrl": "/secondary/flow-choice",
+            "variant": "default"
           },
-          "id": "646d-0000-4271-9ddb-7930-5517-7a52-3a69"
+          "id": "646d-2117-4271-9dd55b-7930-5517-7a52-3a69"
         },
         {
           "type": "survey-button",
@@ -37,9 +53,10 @@
             "title": "Male",
             "value": "Male",
             "literalKey": "gender",
-            "nextUrl": "/secondary/flow-choice"
+            "nextUrl": "/secondary/flow-choice",
+            "variant": "default"
           },
-          "id": "5eb6-f96b-4133-9b9a-cc93-77fc-ac38-0000"
+          "id": "5eb6-f96b-4133-9b9a66-cc93-77fc-ac38-a442"
         }
       ]
     }

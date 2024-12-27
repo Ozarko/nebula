@@ -56,7 +56,7 @@ export const Navigation = ({
           historyBackConfig && " after:content-[''] after:w-6",
         )}
       >
-        <div className="flex items-center justify-center w-6 h-6">
+        <div className="flex items-center justify-center w-6">
           <NavLogoIcon {...navLogoConfig} />
         </div>
       </div>

@@ -552,7 +552,7 @@
         {
           "type": "header",
           "config": {
-            "title": "{{gender}} ((if{children='Yes'}?who have children:'')) need a slightly different approach to improve their relationship. Which statement best describes you?",
+            "title": "{{gender}} ((if{{children}}='Yes'?who have children:'')) need a slightly different approach to improve their relationship. Which statement best describes you?",
             "variant": "default"
           },
           "id": "cce3-fe31-4d22-9081-f612-e443-ffd9-af07"
