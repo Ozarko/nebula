@@ -6,6 +6,7 @@
     "prelanding": {
       "id": "prelanding",
       "pageType": "block-builder",
+      "pageVariant": "default",
       "components": [
         {
           "type": "header",
@@ -39,6 +40,7 @@
     "flow-choice": {
       "id": "flow-choice",
       "pageType": "block-builder",
+      "pageVariant": "default",
       "components": [
         {
           "type": "header",
@@ -72,6 +74,7 @@
     "single-parent": {
       "id": "single-parent",
       "pageType": "block-builder",
+      "pageVariant": "default",
       "components": [
         {
           "type": "header",
@@ -105,6 +108,7 @@
     "single-problem": {
       "id": "single-problem",
       "pageType": "block-builder",
+      "pageVariant": "default",
       "components": [
         {
           "type": "header",
@@ -158,6 +162,7 @@
     "traits-tend-to-overthink": {
       "id": "traits-tend-to-overthink",
       "pageType": "block-builder",
+      "pageVariant": "default",
       "components": [
         {
           "type": "header",
@@ -191,6 +196,7 @@
     "how-it-works": {
       "id": "how-it-works",
       "pageType": "block-builder",
+      "pageVariant": "default",
       "components": [
         {
           "type": "header",
@@ -219,6 +225,7 @@
     "traits-most-important": {
       "id": "traits-most-important",
       "pageType": "block-builder",
+      "pageVariant": "default",
       "components": [
         {
           "type": "header",
@@ -272,6 +279,7 @@
     "traits-emotional-control": {
       "id": "traits-emotional-control",
       "pageType": "block-builder",
+      "pageVariant": "default",
       "components": [
         {
           "type": "header",
@@ -325,6 +333,7 @@
     "parent": {
       "id": "parent",
       "pageType": "block-builder",
+      "pageVariant": "default",
       "components": [
         {
           "type": "header",
@@ -358,6 +367,7 @@
     "in-a-relationship-problem": {
       "id": "in-a-relationship-problem",
       "pageType": "block-builder",
+      "pageVariant": "default",
       "components": [
         {
           "type": "header",
@@ -411,6 +421,7 @@
     "partner-introvert-or-extrovert": {
       "id": "partner-introvert-or-extrovert",
       "pageType": "block-builder",
+      "pageVariant": "default",
       "components": [
         {
           "type": "header",
@@ -454,6 +465,7 @@
     "partner-gender": {
       "id": "partner-gender",
       "pageType": "block-builder",
+      "pageVariant": "default",
       "components": [
         {
           "type": "header",
@@ -487,6 +499,7 @@
     "partner-priority": {
       "id": "partner-priority",
       "pageType": "block-builder",
+      "pageVariant": "default",
       "components": [
         {
           "type": "header",
@@ -557,6 +570,7 @@
     "think-about-relationship-goals": {
       "id": "think-about-relationship-goals",
       "pageType": "block-builder",
+      "pageVariant": "default",
       "components": [
         {
           "type": "header",
@@ -600,6 +614,7 @@
     "relationship-about-us": {
       "id": "relationship-about-us",
       "pageType": "block-builder",
+      "pageVariant": "default",
       "components": [
         {
           "type": "header",
@@ -773,6 +788,7 @@
     "results": {
       "id": "results",
       "pageType": "results",
+      "pageVariant": "default",
       "matchers": {
         "gender": [
           {

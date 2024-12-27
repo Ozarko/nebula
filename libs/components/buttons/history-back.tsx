@@ -1,11 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { PropsWithChildren } from "react";
 
 import { Button } from "@ui/button";
 
-export const HistoryBack = () => {
+export const HistoryBackButton = ({ children }: PropsWithChildren) => {
   const router = useRouter();
 
   const handleBack = () => {
@@ -14,7 +14,7 @@ export const HistoryBack = () => {
 
   return (
     <Button variant="empty" onClick={handleBack}>
-      <Image src="/chevron.svg" alt="Back" width={24} height={24} />
+      {children}
     </Button>
   );
 };

@@ -7,6 +7,7 @@ import {
 export type BaseQuestion = {
   id: string;
   pageType: string;
+  pageVariant: string;
 };
 
 export type Question = BlockBuilderQuestion | ResultsPageType | OneMorePageType;

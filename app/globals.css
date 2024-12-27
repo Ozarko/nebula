@@ -4,6 +4,7 @@
 
 @layer base {
   :root {
+    --background-main: #fbfbff;
     --primary: #6a3aa2;
     --secondary: #fbfbff;
     --border: #e6e6e6;

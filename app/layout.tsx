@@ -13,9 +13,7 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <AppProvider>
       <html lang="en">
-        <body className={`${openSans.variable} antialiased bg-nebula-gradient`}>
-          {children}
-        </body>
+        <body className={`${openSans.variable} antialiased`}>{children}</body>
       </html>
     </AppProvider>
   );

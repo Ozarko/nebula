@@ -1,8 +1,8 @@
 import "server-only";
 
-import { Navigation } from "@components/layout/navigation";
 import { SurveyStartButton } from "@components/survey/buttons/survey-start-button";
 import { getSurveysConfig } from "@services/get-surveys-config";
+import { Main } from "@ui/layout/main";
 import { TypographyH2 } from "@ui/typography/typographyH2";
 import { TypographyP } from "@ui/typography/typographyP";
 
@@ -11,8 +11,7 @@ export default function Home() {
 
   return (
     <>
-      <Navigation />
-      <main className="flex flex-col items-center pt-[76px] container min-h-screen ">
+      <Main variant="special">
         <div className="flex flex-col space-y-4 max-w-sub-container">
           <TypographyH2>
             Welcome to Nebula - Your Path to Clarity and Happiness
@@ -33,7 +32,7 @@ export default function Home() {
             </SurveyStartButton>
           ))}
         </div>
-      </main>
+      </Main>
     </>
   );
 }

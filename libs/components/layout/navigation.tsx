@@ -1,17 +1,22 @@
 import Image from "next/image";
 
+import { Nav, navVariantsType } from "@ui/layout/nav";
 import { cn } from "@utils/ui/cn";
 
-import { HistoryBack } from "./history-back";
+import { NavigationHistoryBack } from "./navigation-history-back";
 
 interface NavigationProps {
   withHistoryBack?: boolean;
+  navVariant: navVariantsType;
 }
 
-export const Navigation = ({ withHistoryBack }: NavigationProps) => {
+export const Navigation = ({
+  withHistoryBack,
+  navVariant,
+}: NavigationProps) => {
   return (
-    <nav className="container fixed top-0 left-0 right-0 py-4 flex items-center justify-between w-screen">
-      {withHistoryBack && <HistoryBack />}
+    <Nav {...navVariant}>
+      {withHistoryBack && <NavigationHistoryBack />}
       <div
         className={cn(
           "flex flex-1 items-center justify-center",
@@ -20,6 +25,6 @@ export const Navigation = ({ withHistoryBack }: NavigationProps) => {
       >
         <Image src="/logo_white.svg" alt="Logo" width={24} height={24} />
       </div>
-    </nav>
+    </Nav>
   );
 };
