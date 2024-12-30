@@ -8,7 +8,8 @@ import { getQuestionByConfig } from "@services/get-question-by-config";
 import { getSurveysConfig } from "@services/get-surveys-config";
 import { getSurveysSlugs } from "@services/get-surveys-slugs";
 import { PageProps } from "@typeslib/app";
-import { Main, validateMainVariant } from "@ui/layout/main";
+import { Main } from "@ui/layout/main/main";
+import { validateMainVariant } from "@ui/layout/main/main.config";
 import { Section } from "@ui/layout/section";
 import { handleSurveySlug } from "@utils/survey/handleSurveySlug";
 

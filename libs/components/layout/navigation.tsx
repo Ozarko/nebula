@@ -1,13 +1,14 @@
 import {
   ChevronLeftIconVariantsType,
   validateChevronLeftVariant,
-} from "@/libs/icons/chevron-left/chevron-left-icon";
+} from "@/libs/icons/chevron-left/chevron-left-icon.config";
+import { NavLogoIcon } from "@/libs/icons/nav-logo/nav-logo-icon";
 import {
-  NavLogoIcon,
   NavLogoVariantsType,
   validateNavLogoVariant,
-} from "@/libs/icons/nav-logo/nav-logo-icon";
-import { Nav, NavVariantsType, validateNavVariant } from "@ui/layout/nav";
+} from "@/libs/icons/nav-logo/nav-logo-icon.config";
+import { Nav } from "@ui/layout/nav/nav";
+import { NavVariantsType, validateNavVariant } from "@ui/layout/nav/nav.config";
 import { cn } from "@utils/ui/cn";
 
 import { NavigationHistoryBack } from "./navigation-history-back";

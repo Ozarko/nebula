@@ -1,6 +1,6 @@
 import { QueryUrlButton } from "@components/buttons/query-url-button";
 import { QueryUrlButtonType } from "@typeslib/survey/components";
-import { validateButtonVariant } from "@ui/button";
+import { validateButtonVariant } from "@ui/button/button.config";
 
 export const SurveyQueryUrlButton = ({ config }: QueryUrlButtonType) => {
   const { title, queryKey } = config;

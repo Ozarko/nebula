@@ -1,8 +1,8 @@
 import { RouterButton } from "@components/buttons/router-button";
-import { Main } from "@ui/layout/main";
+import { Main } from "@ui/layout/main/main";
 import { Section } from "@ui/layout/section";
-import { TypographyH1 } from "@ui/typography/typographyH1";
-import { TypographyP } from "@ui/typography/typographyP";
+import { TypographyH1 } from "@ui/typography/typographyH1/typographyH1";
+import { TypographyP } from "@ui/typography/typographyP/typographyP";
 
 export default function NotFound() {
   return (

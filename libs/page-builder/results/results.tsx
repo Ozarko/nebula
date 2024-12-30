@@ -7,8 +7,8 @@ import { useSurveyLiterals } from "@hooks/use-survey-literals";
 import { useAppSelector } from "@store/hooks";
 import { selectAllSurveyAnswers } from "@store/selectors/survey-selectors";
 import { ResultsPageType } from "@typeslib/survey/page-types";
-import { TypographyH1 } from "@ui/typography/typographyH1";
-import { TypographyP } from "@ui/typography/typographyP";
+import { TypographyH1 } from "@ui/typography/typographyH1/typographyH1";
+import { TypographyP } from "@ui/typography/typographyP/typographyP";
 import { buildStoryWithAllAnswers } from "@utils/survey/build-story-with-all-answers";
 
 export const ResultsPage = ({ matchers, header }: ResultsPageType) => {

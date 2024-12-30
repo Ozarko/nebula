@@ -3,10 +3,8 @@
 import { withSuspense } from "@hoc/withSuspense";
 import { useSurveyLiterals } from "@hooks/use-survey-literals";
 import { SurveyDescriptionType } from "@typeslib/survey/components";
-import {
-  TypographyP,
-  validateTypographyPVariant,
-} from "@ui/typography/typographyP";
+import { TypographyP } from "@ui/typography/typographyP/typographyP";
+import { validateTypographyPVariant } from "@ui/typography/typographyP/typographyP.config";
 
 export const SurveyDescription = withSuspense(
   ({ config }: SurveyDescriptionType) => {

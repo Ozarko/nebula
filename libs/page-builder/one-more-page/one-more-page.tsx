@@ -1,6 +1,6 @@
 import { OneMorePageType } from "@typeslib/survey/page-types";
-import { TypographyH1 } from "@ui/typography/typographyH1";
-import { TypographyP } from "@ui/typography/typographyP";
+import { TypographyH1 } from "@ui/typography/typographyH1/typographyH1";
+import { TypographyP } from "@ui/typography/typographyP/typographyP";
 
 export const OneMorePage = ({ oneMoreProp }: OneMorePageType) => {
   return (

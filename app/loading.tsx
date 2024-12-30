@@ -1,4 +1,4 @@
-import { Main } from "@ui/layout/main";
+import { Main } from "@ui/layout/main/main";
 
 export default function Loading() {
   return (

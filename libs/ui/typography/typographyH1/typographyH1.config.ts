@@ -14,7 +14,7 @@ const cvaVariant: TypographyH1VariantType = {
   special: "text-secondary",
 };
 
-const typographyH1Variants = cva(
+export const typographyH1Variants = cva(
   "font-open-sans text-center text-2xl font-bold",
   {
     variants: {
@@ -35,16 +35,3 @@ export type TypographyH1Props = HTMLAttributes<HTMLHeadingElement> &
 
 export const validateTypographyH1Variant = (variantKey: string) =>
   validateVariant<TypographyH1VariantType>(variantKey, cvaVariant);
-
-export const TypographyH1 = ({
-  children,
-  className,
-  variant,
-  ...rest
-}: TypographyH1Props) => {
-  return (
-    <h2 className={cn(typographyH1Variants({ variant }), className)} {...rest}>
-      {children}
-    </h2>
-  );
-};

@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { PropsWithChildren } from "react";
 
-import { Button } from "@ui/button";
+import { Button } from "@ui/button/button";
 
 export const HistoryBackButton = ({ children }: PropsWithChildren) => {
   const router = useRouter();

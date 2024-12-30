@@ -4,7 +4,8 @@ import { NavigateOptions } from "next/dist/shared/lib/app-router-context.shared-
 import { useRouter } from "next/navigation";
 import { MouseEvent } from "react";
 
-import { Button, ButtonProps } from "@ui/button";
+import { Button } from "@ui/button/button";
+import { ButtonProps } from "@ui/button/button.config";
 
 export type RouterButtonProps = ButtonProps & {
   href: string;

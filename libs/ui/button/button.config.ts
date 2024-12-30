@@ -25,7 +25,7 @@ const cvaVariant: ButtonVariantType = {
   empty: "",
 };
 
-const buttonVariants = cva(
+export const buttonVariants = cva(
   "flex items-center justify-center transition-shadow duration-300 ease-in-out",
   {
     variants: {
@@ -44,22 +44,3 @@ export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> &
 
 export const validateButtonVariant = (variantKey: string) =>
   validateVariant<ButtonVariantType>(variantKey, cvaVariant);
-
-const Button = ({
-  className,
-  variant,
-  type = "button",
-  ...props
-}: ButtonProps) => {
-  return (
-    <button
-      className={cn(buttonVariants({ variant, className }))}
-      type={type}
-      {...props}
-    />
-  );
-};
-
-Button.displayName = "Button";
-
-export { Button, buttonVariants };
