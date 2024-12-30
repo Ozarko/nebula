@@ -6,6 +6,10 @@ Welcome to the Nebula project! This repository contains the source code for the 
 
 [Nebula](https://asknebula.com/) is a platform that provides personalized astrology readings and insights. It helps users understand their astrological profiles and offers guidance based on their unique astrological data.
 
+## Live Demo
+
+You can view the live demo of the Nebula application [here](https://nebula-dun-mu.vercel.app/).
+
 ## Getting Started
 
 To get started with the Nebula Test project, follow the instructions below.
